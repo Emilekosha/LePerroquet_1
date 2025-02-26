@@ -1,9 +1,10 @@
+const pathPrefix = window.location.pathname.includes("/actualites/") ? "../" : "";
 
 document.getElementById('header').innerHTML = `
     <header class="bg-gradient-to-r from-blue-500 to-purple-600 shadow-md">
     <div class="logo flex items-center justify-between mx-auto p-4">
         <div class="flex items-center">
-            <img src="../assets/images/logo1.png" alt="Logo Actualités Locales" class="h-12 rounded-full border-2 border-white">
+            <img src="${pathPrefix}assets/images/logo1.png" alt="Logo Actualités Locales" class="h-12 rounded-full border-2 border-white">
             <h1 class="font-[Bebas Neue] text-4xl font-bold inline-block ml-2 text-white">Le Perroquet</h1>
         </div>
     </div>

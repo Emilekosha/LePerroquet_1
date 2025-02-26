@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #2563eb; /* Bleu professionnel */
+  --secondary-color: #f3f4f6; /* Gris clair */
+  --text-color: #1f2937; /* Gris foncé */
+}
+
+body {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Times New Roman", Times, serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.logo img {
+  width: 70px; /* Ajustez la taille selon vos besoins */
+  height: 70px; /* Ajustez la taille selon vos besoins */
+  border-radius: 50%; /* Pour rendre le logo rond */
+}
+
+.logo {
+  width: 100%; /* S'assurer que le logo prend toute la largeur disponible */
+  display: flex;
+  gap: 550px;
+  justify-content: center; /* Centre le logo */
+  align-items: center; /* Aligne verticalement les éléments */
+  margin-bottom: 50px;
+  padding-top: 50px; /* Espace entre le logo et la navigation */
+}
+
+.login {
+  background-color: #ff7d00;
+  font-size-adjust: 50px;
+}
+
+.signup {
+  background-color: #f72585;
+  font-size: 18px;
+}
+
+.relative-slider {
+  height: 400px;
+}
+
+input:focus {
+  border: none; /* Supprime la bordure */
+  outline: none; /* Supprime l'outline par défaut */
+}
+
+.custom-arrow {
+  color: #ffffff; /* Remplacez par la couleur désirée */
+}
+
+.flex.space-x-4 a {
+  padding: 8px 12px; /* Réduire le padding pour rendre les boutons plus petits */
+  font-size: 14px; /* Ajuster la taille de la police si nécessaire */
+}
+
+.article-card {
+  transition: all 0.3s ease;
+}
+
+.article-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations subtiles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dropdown-toggle:hover + div {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 1s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+nav {
+  background-color: #1e96fc;
+  font-family: "Times New Roman", Times, serif;
+}

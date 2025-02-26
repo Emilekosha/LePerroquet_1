@@ -1,0 +1,93 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .grid-cols-3 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+}
+
+/* Styles pour l'en-tête à partir de 768px */
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: flex; /* Afficher le menu sur les écrans plus larges */
+    }
+    .search-bar {
+        margin-top: 0; /* Ajustement de la marge pour les écrans plus larges */
+    }
+    .flex.space-x-4 {
+        margin-top: 0; /* Ajustement de la marge pour les boutons d'action */
+    }
+}
+
+/* Styles spécifiques pour les écrans larges */
+@media (min-width: 768px) {
+    .flex.space-x-4 a {
+        margin: 0 8px; /* Ajuster la marge entre les boutons */
+    }
+}
+
+/* Styles pour les écrans inférieurs à 1100px */
+@media (max-width: 1100px) {
+    /* Cibler uniquement la section spécifique */
+    .responsive-section {
+        padding-left: 1rem; /* Ajustez le padding horizontal */
+        padding-right: 1rem;
+    }
+
+    .responsive-section .flex-col {
+        flex-direction: column; /* Aligner les colonnes verticalement */
+    }
+
+    .responsive-section .w-full {
+        width: 100%; /* Assurez-vous que les colonnes prennent toute la largeur */
+    }
+
+    .responsive-section .md\:w-1/2 {
+        width: 100%; /* La colonne principale prend toute la largeur sur petits écrans */
+    }
+
+    .responsive-section .md\:w-1/4 {
+        width: 100%; /* Les colonnes secondaires prennent également toute la largeur */
+    }
+
+    .responsive-section .h-full {
+        height: auto; /* Permettre aux colonnes de s'ajuster automatiquement */
+    }
+
+    .responsive-section img {
+        max-width: 100%; /* Assurez-vous que les images ne débordent pas */
+        height: auto; /* Maintenir le ratio d'aspect */
+    }
+
+    .responsive-section .text-lg {
+        font-size: 1.25rem; /* Ajustez la taille de la police pour les titres */
+    }
+
+    .responsive-section .text-sm {
+        font-size: 0.875rem; /* Ajustez la taille de la police pour le texte */
+    }
+
+    .responsive-section .mb-6 {
+        margin-bottom: 1.5rem; /* Ajustez les marges pour un espacement approprié */
+    }
+
+    .responsive-section .p-4 {
+        padding: 1rem; /* Ajustez le padding pour les petits écrans */
+    }
+
+    .responsive-section .rounded-lg {
+        border-radius: 0.5rem; /* Garder les coins arrondis */
+    }
+
+    .responsive-section .shadow-lg {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajustez l'ombre pour les petits écrans */
+    }
+}

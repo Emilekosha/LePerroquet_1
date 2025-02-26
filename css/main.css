@@ -101,7 +101,7 @@ nav {
 }
 
 /* Media Query responsive pour tous les écrans < 500px */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   /* Réglages généraux */
   body {
     font-size: 14px;

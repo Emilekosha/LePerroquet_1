@@ -45,11 +45,21 @@ document.getElementById('header').innerHTML = `
             </div>
         </div>
 
-        <!-- Barre de recherche -->
-        <div class="search-bar flex items-center w-full md:w-auto">
-            <input type="text" placeholder="Rechercher..." class="border rounded-l-full px-4 py-2 w-full md:w-64">
-            <button class="bg-yellow-500 text-white px-4 py-2 rounded-r-full">🔍</button>
-        </div>
+       <!-- Barre de recherche -->
+<div class="search-bar flex items-center w-full md:w-auto">
+    <div class="flex w-full">
+        <input 
+            type="text" 
+            placeholder="Rechercher..." 
+            class="border rounded-l-full px-4 py-2 w-full md:w-64"
+        >
+        <button class="bg-yellow-500 text-white px-4 py-2 rounded-r-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+        </button>
+    </div>
+</div>
 
         <!-- Section Se connecter, S'inscrire -->
         <div class="flex space-x-4 mt-4 md:mt-0">
@@ -59,4 +69,28 @@ document.getElementById('header').innerHTML = `
     </nav>
 </header>
 `;
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+  
+    // Toggle menu mobile
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('show');
+    });
+  
+    // Gestion des sous-menus sur mobile
+    dropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        if (window.innerWidth < 768) {
+          const dropdownContent = e.target.nextElementSibling;
+          dropdownContent.classList.toggle('hidden');
+          dropdownContent.classList.toggle('show');
+        }
+      });
+    });
+  });
 

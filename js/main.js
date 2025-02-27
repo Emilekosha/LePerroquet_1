@@ -27,7 +27,7 @@ const articles = [
         location: "France"
     },
     {
-        title: "Travailler à l’Aéroport Nice Côte d'Azur: 3 raisons d’embarquer pour une nouvelle aventure professionnelle",
+        title: "Travailler à l'Aéroport Nice Côte d'Azur: 3 raisons d'embarquer pour une nouvelle aventure professionnelle",
         subtitle: "actu<span>aéroport</span>",
         description: "Description courte de l'article 1",
         image: "assets/images/actualite-4.webp",
@@ -43,15 +43,6 @@ const articles = [
         link: "actualites/actualite-5.html",
         publishTime: "9:30",
         location: "Paris"
-    },
-    // Répéter pour les autres articles...
-    {
-        title: "Publicité",
-        subtitle: "Espace",
-        description: "Espace publicitaire",
-        image: "assets/images/publicite.jpg",
-        link: "#",
-        isAd: true
     }
 ];
 
@@ -65,6 +56,7 @@ function createArticleCards() {
 
     grid.innerHTML = '';
     
+    // Création des cartes d'articles
     articles.forEach((article, index) => {
         const articleCard = document.createElement('div');
         articleCard.classList.add(
@@ -84,10 +76,6 @@ function createArticleCards() {
             'group'
         );
         
-        if (article.isAd) {
-            articleCard.classList.add('bg-gradient-to-r', 'from-blue-50', 'to-purple-50', 'border-dashed');
-        }
-        
         articleCard.innerHTML = `
             <div class="relative overflow-hidden">
                 <img 
@@ -95,10 +83,6 @@ function createArticleCards() {
                     alt="${article.title}" 
                     class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                 >
-                ${article.isAd ? 
-                    '<div class="absolute top-2 right-2 bg-yellow-400 text-xs px-2 py-1 rounded-full">Sponsorisé</div>' : 
-                    ''
-                }
             </div>
             <div class="p-5">
                 <h4 class="text-sm text-gray-500 mb-2 uppercase tracking-wider">
@@ -122,44 +106,172 @@ function createArticleCards() {
                     </div>
                 </div>
                
-                ${!article.isAd ? 
-                    `<div class="flex justify-between items-center">
+                <div class="flex justify-between items-center">
+                    <span class="text-blue-600 font-semibold hover:underline flex items-center">
+                        Lire la suite
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        `;
+        
+        articleCard.addEventListener('click', () => {
+            window.location.href = article.link;
+        });
+        
+        grid.appendChild(articleCard);
+    });
+
+    // Configuration des données publicitaires
+    const publicityData = {
+        presentation: {
+            title: 'Présentation',
+            description: 'Découvrez qui nous sommes',
+            details: 'Notre mission et nos valeurs',
+            image: 'assets/images/presentation.jpg',
+            items: [
+                'Fondée en 2024',
+                'Média indépendant',
+                'Engagement pour l\'information'
+            ],
+            link: 'presentation.html'
+        },
+        publicite: {
+            title: 'Publicité',
+            description: 'Votre espace publicitaire',
+            details: 'Contactez notre régie',
+            image: 'assets/images/publicite.jpg',
+            items: [
+                'Tarifs compétitifs',
+                'Large audience',
+                'Formats personnalisés'
+            ],
+            link: 'publicite.html'
+        },
+        sponsorise: {
+            title: 'Sponsorisé par',
+            description: 'Nos principaux sponsors',
+            details: 'Merci à nos partenaires',
+            image: 'assets/images/sponsors.jpg',
+            items: [
+                'Entreprise A',
+                'Groupe B',
+                'Fondation C'
+            ],
+            link: 'sponsors.html'
+        },
+        partenaires: {
+            title: 'Nos Partenaires',
+            description: 'Réseaux et collaborations',
+            details: 'Nos partenariats stratégiques',
+            image: 'assets/images/partenaires.jpg',
+            items: [
+                'Média X',
+                'Association Y',
+                'Plateforme Z'
+            ],
+            link: 'partenaires.html'
+        }
+    };
+
+    // Créer une carte publicitaire unique
+   // Créer une carte publicitaire unique
+   const publicityCard = document.createElement('div');
+   publicityCard.classList.add(
+       'article-card', 
+       'bg-white', 
+       'rounded-xl', 
+       'shadow-lg', 
+       'overflow-hidden', 
+       'transform', 
+       'transition-all', 
+       'duration-300',
+       'hover:shadow-2xl',
+       'hover:scale-105',
+       'cursor-pointer',
+       'border',
+       'border-gray-100',
+       'group'
+   );
+
+    // Fonction pour sélectionner une section aléatoire
+    function getRandomSection() {
+        const sections = Object.keys(publicityData);
+        return sections[Math.floor(Math.random() * sections.length)];
+    }
+
+    // Fonction pour mettre à jour le contenu de la carte
+    function updatePublicityContent(section) {
+        const data = publicityData[section];
+        
+        publicityCard.innerHTML = `
+            <div class="relative overflow-hidden cursor-pointer" data-section="${section}">
+                <img 
+                    src="${data.image}" 
+                    alt="${data.title}" 
+                    class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                >
+                <div class="p-5">
+                    <h4 class="text-sm text-gray-500 mb-2 uppercase tracking-wider">
+                        Publicité
+                    </h4>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                        ${data.title}
+                    </h3>
+                    <div class="flex items-center text-gray-500 mb-3 text-sm">
+                        <div class="flex items-center mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                            </svg>
+                            <span>${data.details}</span>
+                        </div>
+                    </div>
+                   
+                    <div class="flex justify-between items-center">
                         <span class="text-blue-600 font-semibold hover:underline flex items-center">
-                            Lire la suite
+                            Découvrir
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                             </svg>
                         </span>
-                    </div>` 
-                    : ''
-                }
+                    </div>
+                </div>
             </div>
         `;
-        
-        if (!article.isAd) {
-            articleCard.addEventListener('click', () => {
-                window.location.href = article.link;
-            });
-        }
-        
-        grid.appendChild(articleCard);
-    });
+
+        // Ajouter l'écouteur d'événement de clic
+        publicityCard.querySelector('[data-section]').addEventListener('click', (e) => {
+            const section = e.currentTarget.getAttribute('data-section');
+            window.location.href = publicityData[section].link;
+        });
+    }
+
+    // Fonction pour afficher une section aléatoire au chargement
+    function displayRandomSection() {
+        const randomSection = getRandomSection();
+        updatePublicityContent(randomSection);
+    }
+
+    // Ajouter la carte à la grille et afficher une section aléatoire
+    grid.appendChild(publicityCard);
+    displayRandomSection();
 
     console.log('Articles chargés :', articles.length);
 }
 
 document.addEventListener('DOMContentLoaded', createArticleCards);
 
-
+// Autres scripts existants (Swiper, mobile menu, etc.)
 document.addEventListener('DOMContentLoaded', () => {
     // Vérifiez si Swiper est disponible
     if (typeof Swiper !== 'undefined') {
         const heroSwiper = new Swiper('.hero-slider', {
-            // Configuration Swiper
             loop: true,
-            effect: 'fade',  // Transition de type fondu
+            effect: 'fade',
             autoplay: {
-                delay: 5000,  // Change slide every 5 seconds
+                delay: 5000,
                 disableOnInteraction: false,
             },
             navigation: {
@@ -178,7 +290,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Swiper library not loaded');
     }
 });
-
 
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile menu toggle
@@ -223,7 +334,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 // Script pour la newsletter 
 document.addEventListener('DOMContentLoaded', () => {
     const newsletterForm = document.getElementById('newsletter-form');
@@ -245,6 +355,3 @@ document.addEventListener('DOMContentLoaded', () => {
         emailInput.value = ''; // Réinitialiser le champ
     });
 });
-
-
-// section publicitaire

@@ -16,22 +16,20 @@
         <div id="header"></div>
         <script src="../header.js"></script>
 
-        <main class="container mx-auto px-4 py-8 flex">
-            <article class="flex-1 bg-white rounded-lg shadow-lg overflow-hidden mr-4">
+        <main class="container mx-auto px-4 py-8 flex flex-col md:flex-row">
+            <article class="flex-1 bg-white rounded-lg shadow-lg overflow-hidden md:mr-4">
                 <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
-                    <h1 class="text-3xl font-bold mb-4 text-gray-800">Métiers de la création et du digital: quelle formation choisir après le bac?</p>
+                    <h1 class="text-3xl font-bold mb-4 text-gray-800">Métiers de la création et du digital: quelle formation choisir après le bac?</h1>
                     <img src="../assets/images/actualite.webp" alt="Image de l'actualité" class="w-full h-[50vh] object-cover rounded-lg">
                 </div>
                 
                 <div class="p-6">
-                   
                     <div class="prose text-gray-700 leading-relaxed space-y-4">
                         <p>Si vous cherchez à orienter votre passion pour la création et le digital vers une carrière concrète après le lycée, Itecom Art Design se distingue par son approche pédagogique immersive et novatrice. Cette institution dédiée à l'éducation artistique et au design propose à Nice 13 formations variées délivrant des titres enregistrés au répertoire national des certifications professionnelles (RNCP) et ouvrant les portes à des métiers diversifiés tels que graphiste, webdesigner, directeur artistique, modélisateur 3D, architecte d'intérieur et bien d'autres encore.</p>
                         <p>L'école met en avant plusieurs atouts pour nourrir le sens artistique de ses élèves et leur permettre d'exceller dans le domaine créatif et digital: un enseignement théorique de qualité, un accompagnement attentif par des conseillers, des stages immersifs au sein d'entreprises partenaires, ainsi que des professeurs entrepreneurs considérant leurs élèves comme de véritables collaborateurs.</p>
-                        <p>Découvrez les témoignages inspirants de Thelma, étudiante en Prépa Art et Digitale; Hugo, étudiant en 3ème année d’architecture d'intérieur et Christophe Mondoloni, coordinateur de la section architecture d’intérieur, qui, au travers de cette vidéo, vous réserve un aperçu authentique de la richesse de l'enseignement et de l'atmosphère qui règne à Itecom Art Design:</p>
-                        <!-- Ajout d'un lien vidéo -->
+                        <p>Découvrez les témoignages inspirants de Thelma, étudiante en Prépa Art et Digitale; Hugo, étudiant en 3ème année d'architecture d'intérieur et Christophe Mondoloni, coordinateur de la section architecture d'intérieur, qui, au travers de cette vidéo, vous réserve un aperçu authentique de la richesse de l'enseignement et de l'atmosphère qui règne à Itecom Art Design:</p>
+                        
                         <div class="mb-6">
-                          
                             <div class="flex justify-center">
                                 <iframe 
                                     width="560" 
@@ -45,12 +43,11 @@
                             </div>
                         </div>
                        
-                       <p>Face à un monde professionnel en constante mutation, cette école niçoise propose des formations spécialisées qui suivent de près les tendances du marché. En témoigne le taux de réussite de 86% de réussite globale et de 100% obtenu par ses diplômés en 2023. Ainsi, découvrir les formations d'Itecom Art Design à Nice pourrait bien marquer le commencement d'une aventure fascinante à la découverte du monde de la création et du design.</p>
+                        <p>Face à un monde professionnel en constante mutation, cette école niçoise propose des formations spécialisées qui suivent de près les tendances du marché. En témoigne le taux de réussite de 86% de réussite globale et de 100% obtenu par ses diplômés en 2023. Ainsi, découvrir les formations d'Itecom Art Design à Nice pourrait bien marquer le commencement d'une aventure fascinante à la découverte du monde de la création et du design.</p>
+                        
                         <blockquote class="border-l-4 border-blue-500 pl-4 italic my-4">
                             Citation ou point clé de l'actualité
                         </blockquote>
-                        
-                        
                     </div>
                     
                     <div class="mt-6 flex justify-between items-center border-t pt-4">
@@ -59,36 +56,75 @@
                     </div>
                 </div>
             </article>
-    
-            <aside class="w-1/4 bg-white rounded-lg shadow-lg p-4 h-[30vh] mb-6 mt-8">
-                <h2 class="text-xl font-bold mb-4">Dernières actualités</h2>
-                <ul class="space-y-2">
-                    <li><a href="actualites/actualite-2.html" class="text-blue-600 hover:underline mt-6">"Une fatigue profonde" : la maire d'Aubervilliers Karine Franclet se met en retrait de ses fonctions</a></li>
-                    <hr class="bg-gray-200"/>
-                    <li><a href="actualites/actualite-3.html" class="text-blue-600 hover:underline mb-6">Actualité 3</a></li>
-                    <hr class="bg-gray-200"/>
-                    <li><a href="actualites/actualite-4.html" class="text-blue-600 hover:underline">Actualité 4</a></li>
-                    <hr class="bg-gray-200"/>
-                    <li><a href="actualites/actualite-5.html" class="text-blue-600 hover:underline">Actualité 5</a></li>
-                </ul>
+        
+            <aside class="w-full md:w-1/4 bg-white rounded-lg shadow-lg mb-6 mt-8 overflow-hidden">
+                <div class="grid grid-rows-3 h-[70vh]">
+                    <div class="row-span-1 relative">
+                        <img src="../assets/images/actualite-2.jpeg" alt="Actualité 1" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
+                            <span class="text-white text-sm font-semibold">
+                                "Une fatigue profonde" : la maire d'Aubervilliers
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="row-span-2 p-4 overflow-y-auto">
+                        <h2 class="text-xl font-bold mb-4 border-b pb-2">Dernières actualités</h2>
+                        <ul class="space-y-2">
+                            <li class="border-b pb-2">
+                                <a href="actualites/actualite-2.html" class="text-blue-600 hover:underline">
+                                    "Une fatigue profonde" : la maire d'Aubervilliers Karine Franclet se met en retrait de ses fonctions
+                                </a>
+                            </li>
+                            <li class="border-b pb-2">
+                                <a href="actualites/actualite-3.html" class="text-blue-600 hover:underline">
+                                    Actualité 3
+                                </a>
+                            </li>
+                            <li class="border-b pb-2">
+                                <a href="actualites/actualite-4.html" class="text-blue-600 hover:underline">
+                                    Actualité 4
+                                </a>
+                            </li>
+                            <li>
+                                <a href="actualites/actualite-5.html" class="text-blue-600 hover:underline">
+                                    Actualité 5
+                                </a>
+                            </li>
+                        </ul>
             
-                <h2 class="text-xl font-bold mt-6 mb-4">Catégories</h2>
-                <ul class="space-y-2">
-                    <li><a href="actualites/politique.html" class="text-blue-600 hover:underline mb-4">Politique</a></li>
-                    <li><a href="actualites/societe.html" class="text-blue-600 hover:underline  mb-4">Société</a></li>
-                    <li><a href="actualites/sport.html" class="text-blue-600 hover:underline  mb-4">Sport</a></li>
-                    <li><a href="actualites/culture.html" class="text-blue-600 hover:underline  mb-4">Culture</a></li>
-                </ul>
+                        <h2 class="text-xl font-bold mt-6 mb-4 border-b pb-2">Catégories</h2>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="actualites/politique.html" class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm text-center">Politique</a>
+                            <a href="actualites/societe.html" class="bg-green-50 text-green-600 px-3 py-1 rounded-full text-sm text-center">Société</a>
+                            <a href="actualites/sport.html" class="bg-red-50 text-red-600 px-3 py-1 rounded-full text-sm text-center">Sport</a>
+                            <a href="actualites/culture.html" class="bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm text-center">Culture</a>
+                        </div>
             
-                <h2 class="text-xl font-bold mt-6 mb-4">Articles Populaires</h2>
-                <ul class="space-y-2">
-                    <li><a href="actualites/populaire-1.html" class="text-blue-600 hover:underline">Comment la technologie change notre quotidien</a></li>
-                    <li><a href="actualites/populaire-2.html" class="text-blue-600 hover:underline">Les tendances de la mode en 2025</a></li>
-                    <li><a href="actualites/populaire-3.html" class="text-blue-600 hover:underline">Les meilleures destinations de voyage pour 2025</a></li>
-                </ul>
-
+                        <h2 class="text-xl font-bold mt-6 mb-4 border-b pb-2">Articles Populaires</h2>
+                        <ul class="space-y-2">
+                            <li class="border-b pb-2">
+                                <a href="actualites/populaire-1.html" class="text-blue-600 hover:underline">
+                                    Comment la technologie change notre quotidien
+                                </a>
+                            </li>
+                            <li class="border-b pb-2">
+                                <a href="actualites/populaire-2.html" class="text-blue-600 hover:underline">
+                                    Les tendances de la mode en 2025
+                                </a>
+                            </li>
+                            <li>
+                                <a href="actualites/populaire-3.html" class="text-blue-600 hover:underline">
+                                    Les meilleures destinations de voyage pour 2025
+                                </a>
+                            </li>
+                        </ul>
             
-                <a href="actualites.html" class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Voir plus</a>
+                        <a href="actualites.html" class="mt-4 block w-full text-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+                            Voir plus
+                        </a>
+                    </div>
+                </div>
             </aside>
         </main>
     
@@ -101,7 +137,7 @@
             <!-- Logo et Description -->
             <div class="col-span-1 md:col-span-2">
                 <div class="flex items-center mb-4">
-                    <img src="assets/images/perroquet.PNG" alt="Logo" class="w-16 h-16 mr-4 rounded-full">
+                    <img src="/assets/images/perroquet.PNG" alt="Logo" class="w-16 h-16 mr-4 rounded-full">
                     <h3 class="text-2xl font-bold">Le Perroquet</h3>
                 </div>
                 <p class="text-gray-300 mb-4">Votre source d'information locale et mondiale. Nous nous engageons à fournir des informations précises, objectives et pertinentes.</p>

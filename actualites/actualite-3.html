@@ -14,19 +14,17 @@
         <div id="header"></div>
         <script src="../header.js"></script>
         
-        <main class="container mx-auto px-4 py-8 flex">
-            <article class="flex-1 bg-white rounded-lg shadow-lg overflow-hidden mr-4 px-6 mb-6">
-                <h1 class="text-3xl font-bold mb-4 text-gray-800 px-6 mb-6 mt-4">"Attention, cela peut se reproduire" : l'ONU met en garde contre le retour des "dictateurs"</h1>
-                <p class="px-8 mb-4">Le Haut-Commissaire de l'ONU aux droits humains, Volker Türk, doit présenter la semaine prochaine une analyse plus complète de la situation mondiale.</p>
-                <img src="../assets/images/article-2.jpeg" alt="Image de l'actualité" class="w-full  object-cover h-[50vh] px-8 rounded-md">
+        <main class="container mx-auto px-4 py-8 flex flex-col md:flex-row">
+            <article class="w-full md:flex-1 bg-white rounded-lg shadow-lg overflow-hidden md:mr-4 mb-6 md:mb-0">
+                <h1 class="text-xl md:text-3xl font-bold mb-4 text-gray-800 px-4 md:px-6 mt-4">"Attention, cela peut se reproduire" : l'ONU met en garde contre le retour des "dictateurs"</h1>
+                <p class="px-4 md:px-8 mb-4 text-sm md:text-base">Le Haut-Commissaire de l'ONU aux droits humains, Volker Türk, doit présenter la semaine prochaine une analyse plus complète de la situation mondiale.</p>
+                <img src="../assets/images/article-2.jpeg" alt="Image de l'actualité" class="w-full object-cover h-48 md:h-[50vh] px-4 md:px-8 rounded-md">
                 
-                <div class="p-6">
-                   
-                    
+                <div class="p-4 md:p-6">
                     <div class="prose text-gray-700 leading-relaxed space-y-4">
                         <p>Le chef de l'Etat a notamment annoncé qu'il demanderait en 2025 aux Français de "trancher" des "sujets déterminants", laissant entrevoir d'éventuels référendums ou conventions citoyennes.</p>
                         
-                        <h2 class="text-2xl font-semibold mt-6 mb-3">Ce qu'il faut savoir</h2>
+                        <h2 class="text-lg md:text-2xl font-semibold mt-6 mb-3">Ce qu'il faut savoir</h2>
                         
                         <p>Tourner la page de 2024. Mardi 31 décembre, Emmanuel Macron présente ses vœux aux Français pour 2025 dans la traditionnelle allocution télévisée de la Saint-Sylvestre. La dissolution "a produit plus d'instabilité que de sérénité" reconnaît le président de la République dès le début de son allocution. Il affirme par ailleurs qu'il demandera en 2025 aux Français de "trancher" des "sujets déterminants", signe qu'il faudra sans doute s'attendre à des référendums dans l'année à venir.</p>
                         <p>Se positionner en surplomb. Rentré de quelques jours de repos au fort de Brégançon (Var), le président de la République va prononcer ses vœux dans une posture de "garant" et non plus "de gouvernant", décrypte le premier cercle. Avec une volonté de se positionner en surplomb de la scène politique nationale, à l'inverse de son Premier ministre qui lui était sur le terrain lundi à Mayotte.</p>
@@ -40,42 +38,71 @@
                         <p>Paragraphe de conclusion ou informations complémentaires.</p>
                     </div>
                     
-                    <div class="mt-6 flex justify-between items-center border-t pt-4">
-                        <span class="text-gray-500">Publié le 22 février 2025</span>
-                        <a href="../index.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Retour aux actualités</a>
+                    <div class="mt-6 flex flex-col sm:flex-row justify-between items-center border-t pt-4">
+                        <span class="text-sm text-gray-500 mb-2 sm:mb-0">Publié le 22 février 2025</span>
+                        <a href="../index.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition w-full sm:w-auto text-center">
+                            Retour aux actualités
+                        </a>
                     </div>
                 </div>
             </article>
-    
-            <aside class="w-1/4 bg-white rounded-lg shadow-lg p-4 h-[30vh] mb-6 mt-8">
-                <h2 class="text-xl font-bold mb-4">Dernières actualités</h2>
-                <ul class="space-y-2">
-                    <li><a href="actualites/actualite-2.html" class="text-blue-600 hover:underline mt-6">"Une fatigue profonde" : la maire d'Aubervilliers Karine Franclet se met en retrait de ses fonctions</a></li>
-                    <hr class="bg-gray-200"/>
-                    <li><a href="actualites/actualite-3.html" class="text-blue-600 hover:underline mb-6">Actualité 3</a></li>
-                    <hr class="bg-gray-200"/>
-                    <li><a href="actualites/actualite-4.html" class="text-blue-600 hover:underline">Actualité 4</a></li>
-                    <hr class="bg-gray-200"/>
-                    <li><a href="actualites/actualite-5.html" class="text-blue-600 hover:underline">Actualité 5</a></li>
-                </ul>
+        
+            <aside class="w-full md:w-1/4 bg-white rounded-lg shadow-lg p-4 h-auto md:h-[70vh] mb-6 mt-8 overflow-y-auto">
+                <h2 class="text-lg md:text-xl font-bold mb-4 border-b pb-2">Dernières actualités</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3 border-b pb-3">
+                        <img src="../assets/images/actualite-2.jpeg" alt="Actualité 1" class="w-16 h-16 object-cover rounded-md">
+                        <span class="text-sm text-gray-800">
+                            "Une fatigue profonde" : la maire d'Aubervilliers Karine Franclet se met en retrait
+                        </span>
+                    </div>
+                    <div class="flex items-center space-x-3 border-b pb-3">
+                        <img src="../assets/images/actualite-1.jpg" alt="Actualité 2" class="w-16 h-16 object-cover rounded-md">
+                        <span class="text-sm text-gray-800">
+                            Vœux de Macron : les points clés de son allocution pour 2025
+                        </span>
+                    </div>
+                    <div class="flex items-center space-x-3 border-b pb-3">
+                        <img src="../assets/images/article-2.jpeg" alt="Actualité 3" class="w-16 h-16 object-cover rounded-md">
+                        <span class="text-sm text-gray-800">
+                            L'ONU met en garde contre le retour des "dictateurs"
+                        </span>
+                    </div>
+                </div>
             
-                <h2 class="text-xl font-bold mt-6 mb-4">Catégories</h2>
-                <ul class="space-y-2">
-                    <li><a href="actualites/politique.html" class="text-blue-600 hover:underline mb-4">Politique</a></li>
-                    <li><a href="actualites/societe.html" class="text-blue-600 hover:underline  mb-4">Société</a></li>
-                    <li><a href="actualites/sport.html" class="text-blue-600 hover:underline  mb-4">Sport</a></li>
-                    <li><a href="actualites/culture.html" class="text-blue-600 hover:underline  mb-4">Culture</a></li>
-                </ul>
+                <h2 class="text-lg md:text-xl font-bold mt-6 mb-4 border-b pb-2">Catégories</h2>
+                <div class="grid grid-cols-2 gap-2">
+                    <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm text-center">Politique</span>
+                    <span class="bg-green-50 text-green-600 px-3 py-1 rounded-full text-sm text-center">Société</span>
+                    <span class="bg-red-50 text-red-600 px-3 py-1 rounded-full text-sm text-center">Sport</span>
+                    <span class="bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm text-center">Culture</span>
+                </div>
             
-                <h2 class="text-xl font-bold mt-6 mb-4">Articles Populaires</h2>
-                <ul class="space-y-2">
-                    <li><a href="actualites/populaire-1.html" class="text-blue-600 hover:underline">Comment la technologie change notre quotidien</a></li>
-                    <li><a href="actualites/populaire-2.html" class="text-blue-600 hover:underline">Les tendances de la mode en 2025</a></li>
-                    <li><a href="actualites/populaire-3.html" class="text-blue-600 hover:underline">Les meilleures destinations de voyage pour 2025</a></li>
-                </ul>
-
+                <h2 class="text-lg md:text-xl font-bold mt-6 mb-4 border-b pb-2">Articles Populaires</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3 border-b pb-3">
+                        <img src="../assets/images/populaire-1.jpg" alt="Article Populaire 1" class="w-16 h-16 object-cover rounded-md">
+                        <span class="text-sm text-gray-800">
+                            Comment la technologie change notre quotidien
+                        </span>
+                    </div>
+                    <div class="flex items-center space-x-3 border-b pb-3">
+                        <img src="../assets/images/populaire-2.jpg" alt="Article Populaire 2" class="w-16 h-16 object-cover rounded-md">
+                        <span class="text-sm text-gray-800">
+                            Les tendances de la mode en 2025
+                        </span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <img src="../assets/images/populaire-3.jpg" alt="Article Populaire 3" class="w-16 h-16 object-cover rounded-md">
+                        <span class="text-sm text-gray-800">
+                            Les meilleures destinations de voyage pour 2025
+                        </span>
+                    </div>
+                </div>
             
-                <a href="actualites.html" class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Voir plus</a>
+                <span class="mt-4 block w-full text-center px-4 py-2 bg-blue-600 text-white rounded transition">
+                    Voir plus d'actualités
+                </span>
             </aside>
         </main>
     
@@ -88,7 +115,7 @@
             <!-- Logo et Description -->
             <div class="col-span-1 md:col-span-2">
                 <div class="flex items-center mb-4">
-                    <img src="assets/images/perroquet.PNG" alt="Logo" class="w-16 h-16 mr-4 rounded-full">
+                    <img src="/assets/images/perroquet.PNG" alt="Logo" class="w-16 h-16 mr-4 rounded-full">
                     <h3 class="text-2xl font-bold">Le Perroquet</h3>
                 </div>
                 <p class="text-gray-300 mb-4">Votre source d'information locale et mondiale. Nous nous engageons à fournir des informations précises, objectives et pertinentes.</p>

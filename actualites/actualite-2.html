@@ -16,23 +16,24 @@
         <div id="header"></div>
         <script src="../header.js"></script>
 
-        <main class="container mx-auto px-4 py-8 flex">
-            <article class="flex-1 bg-white rounded-lg shadow-lg overflow-hidden mr-4">
-                <img src="../assets/images/actualite-2.jpeg" alt="Image de l'actualité" class="w-full h-96 object-cover">
+        <main class="container mx-auto px-4 py-8 flex flex-col md:flex-row">
+            <article class="w-full md:flex-1 bg-white rounded-lg shadow-lg overflow-hidden md:mr-4 mb-6 md:mb-0">
+                <img src="../assets/images/actualite-2.jpeg" alt="Image de l'actualité" class="w-full h-48 md:h-96 object-cover">
                 
-                <div class="p-6">
-                    <h1 class="text-3xl font-bold mb-4 text-gray-800">SNCF : Le futur train TGV M devrait être prêt pour une mise en service début 2026</h1>
+                <div class="p-4 md:p-6">
+                    <h1 class="text-xl md:text-3xl font-bold mb-4 text-gray-800">SNCF : Le futur train TGV M devrait être prêt pour une mise en service début 2026</h1>
                     
                     <div class="prose text-gray-700 leading-relaxed space-y-4">
                         <p>PHASE DE TESTS•Toujours en phase de tests, le TGV M doit encore obtenir des autorisations réglementaires. SNCF et Alstom accélèrent les efforts pour tenir ce calendrier.</p>
                         
-                        <h2 class="text-2xl font-semibold mt-6 mb-3">Ce qu'il faut savoir</h2>
+                        <h2 class="text-lg md:text-2xl font-semibold mt-6 mb-3">Ce qu'il faut savoir</h2>
                         
-                       <p>Le futur TGV M, censé révolutionner le transport ferroviaire à grande vitesse, devra encore franchir de nombreux obstacles avant de transporter ses premiers voyageurs. Malgré un an de retard sur le calendrier initial, SNCF Voyageurs et Alstom visent toujours une entrée en service commercial « début 2026 », tout en reconnaissant qu’une « course contre la montre » est engagée.</p>
-                       <p>« Nous sommes mobilisés ensemble […] pour réussir la mise en service du TGV M dans les meilleurs délais, dans le respect de toutes les étapes nécessaires à l’admission de ce nouveau train révolutionnaire », a affirmé SNCF Voyageurs dans une déclaration.</p>
+                        <p>Le futur TGV M, censé révolutionner le transport ferroviaire à grande vitesse, devra encore franchir de nombreux obstacles avant de transporter ses premiers voyageurs. Malgré un an de retard sur le calendrier initial, SNCF Voyageurs et Alstom visent toujours une entrée en service commercial « début 2026 », tout en reconnaissant qu'une « course contre la montre » est engagée.</p>
+                        <p>« Nous sommes mobilisés ensemble […] pour réussir la mise en service du TGV M dans les meilleurs délais, dans le respect de toutes les étapes nécessaires à l'admission de ce nouveau train révolutionnaire », a affirmé SNCF Voyageurs dans une déclaration.</p>
                         <h2 class="text-2xl text-black font-semibold">En cours de phase de tests</h2>
                         <p>Cette prise de position intervient après que plusieurs médias, dont Les Echos, ont exprimé des doutes quant à la faisabilité de cette échéance. Le quotidien économique évoquait mardi « un sérieux défi en termes de calendrier », en raison des nombreuses validations réglementaires encore nécessaires. Actuellement en phase de tests, le TGV M doit prouver sa capacité à rouler à 320 km/h en service commercial.</p>
-                        <p>Commencés en 2023, ces essais sont réalisés sur le réseau national et constituent une étape clé pour obtenir l’autorisation de mise sur le marché délivrée par l’Agence européenne des chemins de fer (ERA), après un processus supervisé par l’Etablissement public de sécurité ferroviaire (EPSF). Selon un responsable de l’EPSF cité par Les Echos, cette procédure pourrait débuter en septembre et nécessiter cinq mois de validation.</p>
+                        <p>Commencés en 2023, ces essais sont réalisés sur le réseau national et constituent une étape clé pour obtenir l'autorisation de mise sur le marché délivrée par l'Agence européenne des chemins de fer (ERA), après un processus supervisé par l'Etablissement public de sécurité ferroviaire (EPSF). Selon un responsable de l'EPSF cité par Les Echos, cette procédure pourrait débuter en septembre et nécessiter cinq mois de validation.</p>
+                        
                         <blockquote class="border-l-4 border-blue-500 pl-4 italic my-4">
                             Citation ou point clé de l'actualité
                         </blockquote>
@@ -40,15 +41,17 @@
                         <p>Paragraphe de conclusion ou informations complémentaires.</p>
                     </div>
                     
-                    <div class="mt-6 flex justify-between items-center border-t pt-4">
-                        <span class="text-gray-500">Publié le 22 février 2025</span>
-                        <a href="../index.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Retour aux actualités</a>
+                    <div class="mt-6 flex flex-col sm:flex-row justify-between items-center border-t pt-4">
+                        <span class="text-sm text-gray-500 mb-2 sm:mb-0">Publié le 22 février 2025</span>
+                        <a href="../index.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition w-full sm:w-auto text-center">
+                            Retour aux actualités
+                        </a>
                     </div>
                 </div>
             </article>
-    
-            <aside class="w-1/4 bg-white rounded-lg shadow-lg p-4 h-[30vh] mb-6 mt-8">
-                <h2 class="text-xl font-bold mb-4">Dernières actualités</h2>
+        
+            <aside class="w-full md:w-1/4 bg-white rounded-lg shadow-lg p-4 h-auto md:h-[30vh] mb-6 mt-8">
+                <h2 class="text-lg md:text-xl font-bold mb-4">Dernières actualités</h2>
                 <ul class="space-y-2">
                     <li><a href="actualites/actualite-2.html" class="text-blue-600 hover:underline mt-6">"Une fatigue profonde" : la maire d'Aubervilliers Karine Franclet se met en retrait de ses fonctions</a></li>
                     <hr class="bg-gray-200"/>
@@ -59,7 +62,7 @@
                     <li><a href="actualites/actualite-5.html" class="text-blue-600 hover:underline">Actualité 5</a></li>
                 </ul>
             
-                <h2 class="text-xl font-bold mt-6 mb-4">Catégories</h2>
+                <h2 class="text-lg md:text-xl font-bold mt-6 mb-4">Catégories</h2>
                 <ul class="space-y-2">
                     <li><a href="actualites/politique.html" class="text-blue-600 hover:underline mb-4">Politique</a></li>
                     <li><a href="actualites/societe.html" class="text-blue-600 hover:underline  mb-4">Société</a></li>
@@ -67,13 +70,12 @@
                     <li><a href="actualites/culture.html" class="text-blue-600 hover:underline  mb-4">Culture</a></li>
                 </ul>
             
-                <h2 class="text-xl font-bold mt-6 mb-4">Articles Populaires</h2>
+                <h2 class="text-lg md:text-xl font-bold mt-6 mb-4">Articles Populaires</h2>
                 <ul class="space-y-2">
                     <li><a href="actualites/populaire-1.html" class="text-blue-600 hover:underline">Comment la technologie change notre quotidien</a></li>
                     <li><a href="actualites/populaire-2.html" class="text-blue-600 hover:underline">Les tendances de la mode en 2025</a></li>
                     <li><a href="actualites/populaire-3.html" class="text-blue-600 hover:underline">Les meilleures destinations de voyage pour 2025</a></li>
                 </ul>
-
             
                 <a href="actualites.html" class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Voir plus</a>
             </aside>
@@ -88,7 +90,7 @@
             <!-- Logo et Description -->
             <div class="col-span-1 md:col-span-2">
                 <div class="flex items-center mb-4">
-                    <img src="assets/images/perroquet.PNG" alt="Logo" class="w-16 h-16 mr-4 rounded-full">
+                    <img src="/assets/images/perroquet.PNG" alt="Logo" class="w-16 h-16 mr-4 rounded-full">
                     <h3 class="text-2xl font-bold">Le Perroquet</h3>
                 </div>
                 <p class="text-gray-300 mb-4">Votre source d'information locale et mondiale. Nous nous engageons à fournir des informations précises, objectives et pertinentes.</p>

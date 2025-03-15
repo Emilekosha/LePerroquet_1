@@ -109,16 +109,7 @@ function createArticleCards() {
                         <span>${article.publishTime || "À l'instant"}</span>
                     </div>
                 </div>
-                <div class="flex justify-between items-center">
-                    <a href="${
-                      article.link
-                    }" class="text-blue-600 font-semibold hover:underline flex items-center">
-                        Lire la suite
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </div>
+               
             </div>
         `;
 
@@ -132,9 +123,9 @@ function createArticleCards() {
   // Configuration des données publicitaires
   const donneesPublicite = {
     sponsorise: {
-      titre: "SPONSORISÉ PAR ÉclatPur",
+      titre: "Sponsorisé par ÉclatPur",
       description:
-        "Découvrez ÉclatPur : L'Art de Sublimer la Brillanceet la Pureté de votre Quotidien ! ",
+        "L'Art de Sublimer la Brillanceet la Pureté de votre Quotidien ! ",
       details: "Merci à nos partenaires",
       image: "assets/images/produit1.jpg",
       elements: ["Entreprise A", "Groupe B", "Fondation C"],
@@ -168,19 +159,12 @@ function createArticleCards() {
         <div class="p-5 cursor-pointer">
         
             <h2 class="text-sm text-gray-800 mb-2 uppercase tracking-wider font-bold hover:text-blue-600 transition-colors duration-300">
-                ${donneesPublicite.sponsorise.description}
+                 ${donneesPublicite.sponsorise.titre}
             </h2>
-            <h3 class="font-bold text-xl mb-3 text-blue-600  hover:text-blue-600 transition-colors duration-300">
-                    ${donneesPublicite.sponsorise.titre}
+            <h3 class="font-bold text-xl mb-3 text-gray-500  hover:text-gray-800 transition-colors duration-300">
+                  ${donneesPublicite.sponsorise.description}
                 </h3>
-            <div class="flex justify-between items-center">
-                <a href="${donneesPublicite.sponsorise.lien}" class="text-blue-600 font-semibold hover:underline flex items-center">
-                    Découvrir
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                </a>
-            </div>
+           
         </div>
     `;
 
@@ -197,32 +181,6 @@ function createArticleCards() {
 document.addEventListener("DOMContentLoaded", createArticleCards);
 
 // Autres scripts existants (Swiper, mobile menu, etc.)
-document.addEventListener("DOMContentLoaded", () => {
-  // Vérifiez si Swiper est disponible
-  if (typeof Swiper !== "undefined") {
-    const heroSwiper = new Swiper(".hero-slider", {
-      loop: true,
-      effect: "fade",
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      fadeEffect: {
-        crossFade: true,
-      },
-    });
-  } else {
-    console.error("Swiper library not loaded");
-  }
-});
 
 document.addEventListener("DOMContentLoaded", () => {
   // Mobile menu toggle

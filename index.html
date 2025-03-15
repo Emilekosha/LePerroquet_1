@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
-  <body class="font-roboto bg-gray-100">
+  <body class=" bg-gray-100" style="font-family: 'Times New Roman', Times, serif;">
     <!-- Header -->
     <div id="header"></div>
     <script src="./header.js"></script>
@@ -57,78 +57,52 @@
     <main class="container mx-auto mt-8 px-4">
       <!-- Section Hero avec Carrousel -->
       <!-- Hero Section avec Swiper Slider -->
-
       <section class="hero mb-12">
         <div class="swiper hero-slider">
           <div class="swiper-wrapper">
             <!-- Slide dynamique 1 -->
             <div class="swiper-slide">
-              <div class="relative-slider h-[600px] md:h-[700px] w-full">
+              <div class="relative h-[600px] md:h-[700px] w-full">
                 <div
                   class="absolute inset-0 bg-cover bg-center"
                   style="background-image: url('assets/images/honda-2.jpg')"
                 ></div>
                 <div class="absolute inset-0 bg-black bg-opacity-70"></div>
                 <!-- Augmenter l'opacité -->
-                <div
-                  class="container mx-auto relative z-10 flex items-center justify-center h-full pb-12 px-4"
-                >
+                <div class="container mx-auto relative z-10 flex items-center justify-center h-full pb-12 px-4">
                   <div class="text-white max-w-2xl text-center">
-                    <h2
-                      class="text-3xl md:text-5xl font-bold mb-4 animate-fade-in transition duration-500"
-                    >
-                      Des voitures Honda rappelées partout en France : six
-                      modèles
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4 animate-fade-in transition duration-500">
+                      Des voitures Honda rappelées partout en France : six modèles
                     </h2>
-                    <p
-                      class="text-base md:text-lg mb-6 animate-fade-in-delay transition duration-500"
-                    >
-                      Toutes ces voitures ont été commercialisées pendant trois
-                      ans, entre le 1er août 2021 et le 1er août 2024. Il
-                      convient d'être prudent.
+                    <p class="text-base md:text-lg mb-6 animate-fade-in-delay transition duration-500">
+                      Toutes ces voitures ont été commercialisées pendant trois ans, entre le 1er août 2021 et le 1er août 2024. Il convient d'être prudent.
                     </p>
-                    <a
-                      href="actualites/honda.html"
-                      class="btn bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full shadow-lg transition duration-300 animate-fade-in-delay"
-                    >
+                    <a href="actualites/honda.html" class="btn bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full shadow-lg transition duration-300 animate-fade-in-delay">
                       Lire l'Article
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-
+      
             <!-- Slide dynamique 2 -->
             <div class="swiper-slide">
-              <div class="relative-slider h-[600px] md:h-[700px] w-full">
+              <div class="relative h-[600px] md:h-[700px] w-full">
                 <div
                   class="absolute inset-0 bg-cover bg-center"
-                  style="background-image: url('assets/images/paris.webp')"
+                  style="background-image: url('assets/images/paris.jpeg')"
                 ></div>
                 <div class="absolute inset-0 bg-black bg-opacity-70"></div>
                 <!-- Augmenter l'opacité -->
-                <div
-                  class="container mx-auto relative z-10 flex items-center justify-center h-full pb-12 px-4"
-                >
+                <div class="container mx-auto relative z-10 flex items-center justify-center h-full pb-12 px-4">
                   <div class="text-white max-w-2xl text-center">
-                    <h2
-                      class="text-3xl md:text-5xl font-bold mb-6 animate-fade-in transition duration-500"
-                    >
-                      Ecole de commerce à Nice: pourquoi choisir une école
-                      “proche” de ses étudiants?
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6 animate-fade-in transition duration-500">
+                      Ecole de commerce à Nice: pourquoi choisir une école “proche” de ses étudiants?
                     </h2>
-                    <p
-                      class="text-base md:text-lg mb-6 animate-fade-in-delay transition duration-500"
-                    >
-                      Dans le paysage éducatif, le choix de l'école de commerce
-                      revêt une importance cruciale pour les étudiants en quête
-                      d'une formation de qualité et d'une expérience
-                      enrichissante.
+                    <p class="text-base md:text-lg mb-6 animate-fade-in-delay transition duration-500">
+                      Dans le paysage éducatif, le choix de l'école de commerce revêt une importance cruciale pour les étudiants en quête d'une formation de qualité et d'une expérience enrichissante.
                     </p>
-                    <a
-                      href="actualites/commerce.html"
-                      class="btn bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 mb-6 rounded-full shadow-lg transition duration-300 animate-fade-in-delay"
-                    >
+                    <a href="actualites/commerce.html" class="btn bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 mb-6 rounded-full shadow-lg transition duration-300 animate-fade-in-delay">
                       Découvrir
                     </a>
                   </div>
@@ -136,20 +110,16 @@
               </div>
             </div>
           </div>
-
+      
           <!-- Navigation -->
-          <div
-            class="swiper-button-next custom-arrow bg-opacity-50 rounded-full p-4"
-          ></div>
-          <div
-            class="swiper-button-prev custom-arrow bg-opacity-50 rounded-full p-4"
-          ></div>
-
+          <div class="swiper-button-next custom-arrow bg-opacity-50 rounded-full p-4"></div>
+          <div class="swiper-button-prev custom-arrow bg-opacity-50 rounded-full p-4"></div>
+      
           <!-- Pagination -->
           <div class="swiper-pagination"></div>
         </div>
       </section>
-
+      
       <!--  -->
       <section
         class="container mx-auto px-4 mb-12 responsive-section responsive-section"

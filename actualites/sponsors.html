@@ -11,7 +11,7 @@
     <link href="../css/main.css" rel="stylesheet" />
     <link href="../css/responsive.css" rel="stylesheet" />
   </head>
-  <body class="bg-white">
+  <body class="bg-white" style="font-family: 'Times New Roman', Times, serif;">
     <!-- Header -->
     <div id="header"></div>
     <script src="../header.js"></script>
@@ -24,9 +24,9 @@
           <!-- Texte sponsorisé -->
           <p class="text-xl md:text-2xl uppercase tracking-widest text-blue-700 border-b-4 border-dotted border-blue-400 pb-4 mb-8 w-fit font-bold">
             Sponsorisé par
-            <span class="font-extrabold">
-              Festival Printemps des Arts Monte-Carlo
-            </span>
+            <a href="#" class="font-extrabold text-indigo-600 hover:underline">
+              ÉclatPur
+            </a>
           </p>
         
           <!-- Titre principal -->
@@ -35,157 +35,187 @@
           </h2>
         
           <!-- Description -->
-          <p class="text-gray-600 text-2xl mb-6">
+          <p class="text-gray-600 text-2xl mb-6 text-justify leading-relaxed tracking-wide">
             Transformez votre quotidien avec <strong>ÉclatPur</strong>, la marque qui allie efficacité et respect de l’environnement pour un
             entretien impeccable de votre maison. Nos produits de vaisselle et d'entretien sont formulés pour révéler l'éclat naturel de vos
             ustensiles tout en préservant la pureté de votre espace de vie.
-            <br />
-            🌿 Brillance Éclatante : Grâce à notre technologie innovante, chaque goutte de nos détergents et nettoyants offre une brillance incomparable.
           </p>
         
           <!-- Galerie d'images avec une en vedette -->
           <div class="flex flex-col gap-6">
             <!-- Image principale au premier plan -->
             <img
-            src="../assets/images/produit1.jpg"
-            alt="Produit phare ÉclatPur"
-            class="w-full aspect-[16/9]  object-cover"
-          />
-          
-          
-        
-            <!-- Deux images en bas côte à côte -->
-            <div class="grid grid-cols-2 gap-6">
-              <img
-                src="../assets/images/produit2.jpg"
-                alt="ÉclatPur - Vue secondaire 1"
-                class="w-full h-auto rounded-lg shadow-lg object-cover"
-              />
-              <img
-                src="../assets/images/produit3.jpg"
-                alt="ÉclatPur - Vue secondaire 2"
-                class="w-full h-auto rounded-lg shadow-lg object-cover"
-              />
-            </div>
+              src="../assets/images/produit1.jpg"
+              alt="Produit phare ÉclatPur"
+              class="w-full h-[300px] object-cover rounded-lg shadow-lg"
+            />   
           </div>
         </section>
+        
         
         
 
         <!-- SECTION 2 : Avantages / Engagements -->
-        <section class="bg-white rounded-lg shadow-md p-6 md:p-8">
+        <section class="bg-gradient-to-r from-white via-gray-50 to-white rounded-2xl shadow-2xl p-8 md:p-12 w-full">
           <!-- Titre -->
-          <p class="text-gray-600 text-2xl mb-6">
-            💧 Pureté Assurée : ÉclatPur s'engage pour un nettoyage respectueux de la santé et de l'environnement. Nos formules sont sans produits chimiques agressifs, biodégradables et douces pour vos mains. Parce que vous méritez ce qu'il y a de mieux, tant pour votre maison que pour la planète.
+          <p class="text-gray-800 text-3xl font-semibold mb-8 leading-relaxed text-center">
+            🌿 Brillance Éclatante :
+            <span class="block text-center text-lg text-gray-600 mt-2 font-normal">
+              Grâce à notre technologie innovante, chaque goutte de nos détergents et nettoyants offre une brillance incomparable.
+            </span>
           </p>
         
-         
-        
           <!-- Images pour illustrer les avantages -->
-          <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <img
-              src="../assets/images/produit4.jpg"
-              alt="ÉclatPur - Engagements"
-              class="rounded-lg shadow-lg w-full h object-cover"
-            />
-            <img
-              src="../assets/images/produit5.jpg"
-              alt="ÉclatPur - Responsabilité environnementale"
-              class="rounded-lg shadow-lg w-full h object-cover"
-            />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="overflow-hidden rounded-xl shadow-lg group">
+              <img
+                src="../assets/images/produit2.jpg"
+                alt="ÉclatPur - Vue secondaire 1"
+                class="h-96 w-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg group">
+              <img
+                src="../assets/images/produit3.jpg"
+                alt="ÉclatPur - Vue secondaire 2"
+                class="h-96 w-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
           </div>
         
           <!-- Texte de conclusion -->
-          <p class="mt-6 text-gray-700">
+          <p class="mt-8 text-gray-700 text-lg leading-relaxed text-center">
             Faites le choix de l'excellence pour votre vaisselle et votre entretien.<br />
-            <strong>ÉclatPur : Brillance et Pureté au quotidien. ✨</strong>
+            <strong class="text-indigo-600">ÉclatPur : Brillance et Pureté au quotidien. ✨</strong>
           </p>
         </section>
         
+        
 
-        <!-- SECTION 3 : Offres et Produits -->
-        <section class="bg-white rounded-lg shadow-md p-6 md:p-8">
-          <h3 class="text-2xl font-semibold mb-6">
-            👉 Retrouvez l’ensemble de nos produits de la marque ÉclatPur :
-          </h3>
-
-          <div class="space-y-6">
-            <!-- Produit 1 : Tablettes -->
-            <div
-              class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
-            >
-              <h4 class="text-lg font-bold mb-2">✨ Tablettes ÉclatPur</h4>
-              <p class="text-sm text-gray-600 mb-4">
-                Tablettes pour lave-vaisselle clean et efficaces.
-              </p>
+        <section class="bg-gradient-to-r from-white via-gray-50 to-white rounded-3xl shadow-2xl p-8 md:p-12 w-full max-w-9xl mx-auto">
+          <!-- Titre -->
+          <p class="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-8 leading-relaxed">
+            💧 Pureté Assurée
+          </p>
+          <p class="text-justify text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed tracking-wide">
+            ÉclatPur s'engage pour un nettoyage respectueux de la santé et de l'environnement.
+            Nos formules sont sans produits chimiques agressifs, biodégradables et douces pour vos mains.
+            Parce que vous méritez ce qu'il y a de mieux, tant pour votre maison que pour la planète.
+          </p>
+        
+          <!-- Images pour illustrer les avantages -->
+          <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="rounded-2xl overflow-hidden shadow-xl group relative">
               <img
-                src="extracted_images/image3.png"
-                alt="Tablettes ÉclatPur"
-                class="rounded-lg shadow mb-4 w-full h-auto"
+                src="../assets/images/produit4.jpg"
+                alt="ÉclatPur - Engagements"
+                class="h-96 w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <span class="block text-blue-600 font-bold text-xl mb-4"
-                >4,99 €</span
-              >
-              <button
-                class="bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-700"
-              >
-                J’essaie pour 4,99€
-              </button>
+              <div class="absolute inset-0 bg-black bg-opacity-25 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                <p class="text-white text-lg font-semibold">Engagement Naturel 🌱</p>
+              </div>
             </div>
-
-            <!-- Produit 2 : Nettoyant Multifonctions -->
-            <div
-              class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
-            >
-              <h4 class="text-lg font-bold mb-2">
-                ✨ Nettoyant Multifonctions Liquides en Spray
-              </h4>
-              <p class="text-sm text-gray-600 mb-4">
-                Nettoyage pour l’entretien quotidien de la maison : sols,
-                douche, moquette et canapé.
-              </p>
+            <div class="rounded-2xl overflow-hidden shadow-xl group relative">
               <img
-                src="extracted_images/image4.jpeg"
-                alt="Spray Nettoyant ÉclatPur"
-                class="rounded-lg shadow mb-4 w-full h-auto"
+                src="../assets/images/produit5.jpg"
+                alt="ÉclatPur - Responsabilité environnementale"
+                class="h-96 w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <span class="block text-blue-600 font-bold text-xl mb-4"
-                >9,99 €</span
-              >
-              <button
-                class="bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-700"
-              >
-                J’essaie pour 9,99€
-              </button>
-            </div>
-
-            <!-- Produit 3 : Lessive Liquide -->
-            <div
-              class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
-            >
-              <h4 class="text-lg font-bold mb-2">
-                ✨ Lessive Liquide pour 25 Lavages
-              </h4>
-              <p class="text-sm text-gray-600 mb-4">
-                Élimine les taches incrustées, même après 7 jours. Impeccable
-                même en cycle court et à froid.
-              </p>
-              <img
-                src="extracted_images/image5.png"
-                alt="Lessive Liquide ÉclatPur"
-                class="rounded-lg shadow mb-4 w-full h-auto"
-              />
-              <span class="block text-blue-600 font-bold text-xl mb-4"
-                >19,99 €</span
-              >
-              <button
-                class="bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-700"
-              >
-                J’essaie pour 19,99€
-              </button>
+              <div class="absolute inset-0 bg-black bg-opacity-25 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                <p class="text-white text-lg font-semibold">Respect de l'Environnement 🌍</p>
+              </div>
             </div>
           </div>
+        
+          <!-- Texte de conclusion -->
+          <p class="text-justify text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed tracking-wide">
+            Faites le choix de l'excellence pour votre vaisselle et votre entretien.<br />
+            <strong class="text-indigo-600">ÉclatPur : Brillance et Pureté au quotidien. ✨</strong>
+          </p>
         </section>
+        
+        
+
+        <!-- SECTION 3 : Offres et Produits -->
+        <section class="bg-gradient-to-br from-blue-50 to-white rounded-3xl shadow-2xl p-6 md:p-10 max-w-8xl mx-auto">
+          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-10 text-center">
+            👉 Découvrez toute la gamme <span class="text-blue-700">ÉclatPur</span> !
+          </h3>
+        
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Produit 1 -->
+            <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 p-6 flex flex-col justify-between">
+              <div>
+                <h4 class="text-xl font-bold text-blue-900 mb-3">✨ Tablettes ÉclatPur</h4>
+                <p class="text-gray-600 text-sm mb-6">
+                  Tablettes pour lave-vaisselle clean et super efficaces.
+                </p>
+                <img
+                  src="extracted_images/image3.png"
+                  alt="Tablettes ÉclatPur"
+                  class="rounded-xl shadow-md mb-6 w-full h-48 object-contain bg-gray-50 p-4"
+                />
+              </div>
+              <div>
+                <span class="block text-green-600 font-extrabold text-2xl mb-4">4,99 €</span>
+                <button
+                  class="w-full bg-gradient-to-r from-blue-800 to-blue-600 text-white py-3 rounded-xl font-semibold hover:brightness-110 transition duration-300"
+                >
+                  J’essaie pour 4,99€
+                </button>
+              </div>
+            </div>
+        
+            <!-- Produit 2 -->
+            <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 p-6 flex flex-col justify-between">
+              <div>
+                <h4 class="text-xl font-bold text-blue-900 mb-3">✨ Nettoyant Multifonctions Spray</h4>
+                <p class="text-gray-600 text-sm mb-6">
+                  Nettoyez toute la maison : sols, douche, moquette et canapé.
+                </p>
+                <img
+                  src="extracted_images/image4.jpeg"
+                  alt="Spray Nettoyant ÉclatPur"
+                  class="rounded-xl shadow-md mb-6 w-full h-48 object-contain bg-gray-50 p-4"
+                />
+              </div>
+              <div>
+                <span class="block text-green-600 font-extrabold text-2xl mb-4">9,99 €</span>
+                <button
+                  class="w-full bg-gradient-to-r from-blue-800 to-blue-600 text-white py-3 rounded-xl font-semibold hover:brightness-110 transition duration-300"
+                >
+                  J’essaie pour 9,99€
+                </button>
+              </div>
+            </div>
+        
+            <!-- Produit 3 -->
+            <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 p-6 flex flex-col justify-between">
+              <div>
+                <h4 class="text-xl font-bold text-blue-900 mb-3">✨ Lessive Liquide 25 Lavages</h4>
+                <p class="text-gray-600 text-sm mb-6">
+                  Élimine les taches même après 7 jours. Efficace à froid et en cycle court !
+                </p>
+                <img
+                  src="extracted_images/image5.png"
+                  alt="Lessive Liquide ÉclatPur"
+                  class="rounded-xl shadow-md mb-6 w-full h-48 object-contain bg-gray-50 p-4"
+                />
+              </div>
+              <div>
+                <span class="block text-green-600 font-extrabold text-2xl mb-4">19,99 €</span>
+                <button
+                  class="w-full bg-gradient-to-r from-blue-800 to-blue-600 text-white py-3 rounded-xl font-semibold hover:brightness-110 transition duration-300"
+                >
+                  J’essaie pour 19,99€
+                </button>
+              </div>
+            </div>
+        
+          </div>
+        </section>
+        
       </div>
     </main>
 
@@ -213,7 +243,7 @@
 
           <!-- Newsletter -->
           <div class="col-span-1 md:col-span-2">
-            <h3 class="text-2xl font-bold mb-4">Restez Informé</h3>
+            <h3 class="text-2xl font-bold mb-4">Restez Informer</h3>
             <p class="mb-4 text-gray-300">
               Abonnez-vous à notre newsletter pour recevoir les dernières
               actualités.

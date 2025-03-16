@@ -146,7 +146,13 @@ function createArticleCards() {
     "duration-300",
     "hover:shadow-2xl",
     "hover:scale-105"
+    
   );
+
+  // Séparation du titre
+  const titreParts = donneesPublicite.sponsorise.titre.split(" ");
+  const partieSponsorise = titreParts.slice(0, 2).join(" "); // "Sponsorisé par"
+  const partieTitre = titreParts.slice(2).join(" "); // "ÉclatPur"
 
   publiciteCard.innerHTML = `
         <div class="relative overflow-hidden mb-4 cursor-pointer">
@@ -158,10 +164,11 @@ function createArticleCards() {
         </div>
         <div class="p-5 cursor-pointer">
         
-            <h2 class="text-sm text-gray-800 mb-2 uppercase tracking-wider font-bold hover:text-blue-600 transition-colors duration-300">
-                 ${donneesPublicite.sponsorise.titre}
-            </h2>
-            <h3 class="font-bold text-xl mb-3 text-gray-500  hover:text-gray-800 transition-colors duration-300">
+            <h2 class="text-xl mb-2 tracking-wider font-bold hover:text-blue-600 transition-colors duration-300">
+      <span class="text-gray-400">${partieSponsorise}</span>
+      <span class="text-gray-500">${partieTitre}</span>
+    </h2>
+            <h3 class="font-bold text-xl mb-3 text-gray-600  hover:text-gray-800 transition-colors duration-300">
                   ${donneesPublicite.sponsorise.description}
                 </h3>
            

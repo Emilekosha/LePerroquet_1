@@ -5,10 +5,9 @@
 }
 
 body {
-  /* font-family: "Roboto", sans-serif; */
   font-family: "Times New Roman", Times, serif;
   color: var(--text-color);
-  line-height: 1.6;
+  
 }
 
 .logo img {

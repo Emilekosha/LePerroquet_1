@@ -1,207 +1,414 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Actualité 1 - Votre Site</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/responsive.css" rel="stylesheet">
-   
-   
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/responsive.css" rel="stylesheet" />
+  </head>
 
-<body class="bg-gray-100" style="font-family: 'Times New Roman', Times, serif;">
-        <!-- Header -->
-        <div id="header"></div>
-        <script src="../header.js"></script>
+  <body
+    class="bg-gray-100"
+    style="font-family: 'Times New Roman', Times, serif"
+  >
+    <!-- Header -->
+    <div id="header"></div>
+    <script src="../header.js"></script>
 
-        <main class="container mx-auto px-4 py-8 flex flex-col md:flex-row">
-            <article class="flex-1 bg-white rounded-lg shadow-lg overflow-hidden md:mr-4">
-                <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
-                    <h1 class="text-3xl font-bold mb-4 text-gray-800">Métiers de la création et du digital: quelle formation choisir après le bac?</h1>
-                    <img src="../assets/images/actualite.webp" alt="Image de l'actualité" class="w-full h-[50vh] object-cover rounded-lg">
-                </div>
-                
-                <div class="p-6">
-                    <div class="prose text-gray-700 leading-relaxed space-y-4">
-                        <p>Si vous cherchez à orienter votre passion pour la création et le digital vers une carrière concrète après le lycée, Itecom Art Design se distingue par son approche pédagogique immersive et novatrice. Cette institution dédiée à l'éducation artistique et au design propose à Nice 13 formations variées délivrant des titres enregistrés au répertoire national des certifications professionnelles (RNCP) et ouvrant les portes à des métiers diversifiés tels que graphiste, webdesigner, directeur artistique, modélisateur 3D, architecte d'intérieur et bien d'autres encore.</p>
-                        <p>L'école met en avant plusieurs atouts pour nourrir le sens artistique de ses élèves et leur permettre d'exceller dans le domaine créatif et digital: un enseignement théorique de qualité, un accompagnement attentif par des conseillers, des stages immersifs au sein d'entreprises partenaires, ainsi que des professeurs entrepreneurs considérant leurs élèves comme de véritables collaborateurs.</p>
-                        <p>Découvrez les témoignages inspirants de Thelma, étudiante en Prépa Art et Digitale; Hugo, étudiant en 3ème année d'architecture d'intérieur et Christophe Mondoloni, coordinateur de la section architecture d'intérieur, qui, au travers de cette vidéo, vous réserve un aperçu authentique de la richesse de l'enseignement et de l'atmosphère qui règne à Itecom Art Design:</p>
-                        
-                        <div class="mb-6">
-                            <div class="flex justify-center">
-                                <iframe 
-                                    width="560" 
-                                    height="315" 
-                                    src="https://www.youtube.com/embed/S8XcWf69a8o?start=2" 
-                                    title="YouTube video player" 
-                                    frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>
-                       
-                        <p>Face à un monde professionnel en constante mutation, cette école niçoise propose des formations spécialisées qui suivent de près les tendances du marché. En témoigne le taux de réussite de 86% de réussite globale et de 100% obtenu par ses diplômés en 2023. Ainsi, découvrir les formations d'Itecom Art Design à Nice pourrait bien marquer le commencement d'une aventure fascinante à la découverte du monde de la création et du design.</p>
-                        
-                        <blockquote class="border-l-4 border-blue-500 pl-4 italic my-4">
-                            Citation ou point clé de l'actualité
-                        </blockquote>
-                    </div>
-                    
-                    <div class="mt-6 flex justify-between items-center border-t pt-4">
-                        <span class="text-gray-500">Publié le 22 février 2025</span>
-                        <a href="../index.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Retour aux actualités</a>
-                    </div>
-                </div>
-            </article>
-        
-            <aside class="w-full md:w-1/4 bg-white rounded-lg shadow-lg mb-6 mt-8 overflow-hidden">
-                <div class="grid grid-rows-3 h-[70vh]">
-                    <div class="row-span-1 relative">
-                        <img src="../assets/images/actualite-2.jpeg" alt="Actualité 1" class="absolute inset-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
-                            <span class="text-white text-sm font-semibold">
-                                "Une fatigue profonde" : la maire d'Aubervilliers
-                            </span>
-                        </div>
-                    </div>
-                    
-                    <div class="row-span-2 p-4 overflow-y-auto">
-                        <h2 class="text-xl font-bold mb-4 border-b pb-2">Dernières actualités</h2>
-                        <ul class="space-y-2">
-                            <li class="border-b pb-2">
-                                <a href="actualites/actualite-2.html" class="text-blue-600 hover:underline">
-                                    "Une fatigue profonde" : la maire d'Aubervilliers Karine Franclet se met en retrait de ses fonctions
-                                </a>
-                            </li>
-                            <li class="border-b pb-2">
-                                <a href="actualites/actualite-3.html" class="text-blue-600 hover:underline">
-                                    Actualité 3
-                                </a>
-                            </li>
-                            <li class="border-b pb-2">
-                                <a href="actualites/actualite-4.html" class="text-blue-600 hover:underline">
-                                    Actualité 4
-                                </a>
-                            </li>
-                            <li>
-                                <a href="actualites/actualite-5.html" class="text-blue-600 hover:underline">
-                                    Actualité 5
-                                </a>
-                            </li>
-                        </ul>
-            
-                        <h2 class="text-xl font-bold mt-6 mb-4 border-b pb-2">Catégories</h2>
-                        <div class="grid grid-cols-2 gap-2">
-                            <a href="actualites/politique.html" class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm text-center">Politique</a>
-                            <a href="actualites/societe.html" class="bg-green-50 text-green-600 px-3 py-1 rounded-full text-sm text-center">Société</a>
-                            <a href="actualites/sport.html" class="bg-red-50 text-red-600 px-3 py-1 rounded-full text-sm text-center">Sport</a>
-                            <a href="actualites/culture.html" class="bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm text-center">Culture</a>
-                        </div>
-            
-                        <h2 class="text-xl font-bold mt-6 mb-4 border-b pb-2">Articles Populaires</h2>
-                        <ul class="space-y-2">
-                            <li class="border-b pb-2">
-                                <a href="actualites/populaire-1.html" class="text-blue-600 hover:underline">
-                                    Comment la technologie change notre quotidien
-                                </a>
-                            </li>
-                            <li class="border-b pb-2">
-                                <a href="actualites/populaire-2.html" class="text-blue-600 hover:underline">
-                                    Les tendances de la mode en 2025
-                                </a>
-                            </li>
-                            <li>
-                                <a href="actualites/populaire-3.html" class="text-blue-600 hover:underline">
-                                    Les meilleures destinations de voyage pour 2025
-                                </a>
-                            </li>
-                        </ul>
-            
-                        <a href="actualites.html" class="mt-4 block w-full text-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-                            Voir plus
-                        </a>
-                    </div>
-                </div>
-            </aside>
-        </main>
-    
+    <main class="container mx-auto px-4 py-8 flex flex-col md:flex-row">
+      <article
+        class="flex-1 bg-white rounded-lg shadow-lg overflow-hidden md:mr-4"
+      >
+        <div class="p-6 rounded-lg mb-6">
+          <h1 class="text-xl font-bold mb-4 text-gray-800 md:px-10 text-5xl">
+            Guerre en Ukraine : Donald Trump affirme qu'il parlera avec Vladimir
+            Poutine ce mardi
+          </h1>
+          <p class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10">
+            Cette réunion intervient dans le cadre du rapprochement
+            américano-russe pour mettre un terme à la guerre en Ukraine.
+          </p>
+          <img
+            src="../assets/images/actualite5.jpg"
+            alt="Image de l'actualité"
+            class="w-full h-[50vh] object-cover rounded-lg"
+          />
+          <span class="mt-6 font-semibold"
+            >Vladimir Poutine et Donald Trump au sommet de l’APEC (Coopération
+            économique pour l’Asie-Pacifique) en 2017. (©JORGE
+            SILVA/POOL/AFP)</span
+          >
+        </div>
+
+        <div class="p-6">
+          <div class="prose text-gray-700 leading-relaxed space-y-4">
+            <p
+              class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10"
+            >
+              Le président américain Donald Trump a indiqué dans la nuit de
+              dimanche à lundi 17 mars 2025 qu’il parlerait mardi à son
+              homologue russe Vladimir Poutine dans le cadre du rapprochement
+              américano-russe pour mettre un terme à la guerre en Ukraine,
+              évoquant des « partages » entre Moscou et Kiev.
+            </p>
+            <h2 class="text-xl font-bold mb-4 text-gray-800 md:px-10 text-2xl">
+              Une entrevue demain
+            </h2>
+            <p
+              class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10"
+            >
+              « Je parlerai au président Poutine mardi », a-t-il indiqué à des
+              journalistes à bord de l’avion présidentiel, précisant que
+              « beaucoup de choses ont déjà été discutées avec les deux parties,
+              l’Ukraine et la Russie ».
+            </p>
+            <p
+              class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10"
+            >
+              Évoquant des « terres » et des « usines de production d’énergie »,
+              il a souligné : « Nous parlons de cela, de partages de certains
+              avoirs ». L’envoyé spécial américain Steve Witkoff, dont le pays
+              fait pression sur la Russie pour qu’elle accepte un cessez-le-feu
+              avec l’Ukraine, avait indiqué dimanche que le président américain
+              et Poutine allaient avoir « une discussion vraiment bonne et
+              positive cette semaine ».
+            </p>
+            <p
+              class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10"
+            >
+              Moscou, Kiev et Washington « veulent que tout cela se termine », a
+              assuré le diplomate sur CNN.
+            </p>
+            <p
+              class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10"
+            >
+              Le Kremlin avait affirmé vendredi que Vladimir Poutine avait remis
+              à l’émissaire américain un message à Donald Trump au sujet de sa
+              <strong class="text-blue-400"
+                >proposition de trêve de 30 jours</strong
+              >
+              , entérinée par l’Ukraine, mais pas par la Russie.
+            </p>
+
+            <h2 class="text-xl font-bold mb-4 text-gray-800 md:px-10 text-2xl">
+              Une entrevue demain
+            </h2>
+            <p
+              class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10"
+            >
+              Vladimir Poutine a jusqu’à présent posé des conditions
+              maximalistes pour une fin du conflit, comme la cession par
+              l’Ukraine de cinq régions annexées par Moscou, l’abandon des
+              ambitions de ce pays de rejoindre l’Otan et le démantèlement du
+              pouvoir ukrainien en place.
+            </p>
+            <p
+              class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10"
+            >
+              Samedi, lors d’un sommet virtuel organisé par Londres, une
+              trentaine de dirigeants d’États et d’organisations soutenant
+              l’Ukraine ont dans ce contexte décidé d’exercer une « pression
+              collective » sur la Russie, qu’ils soupçonnent de vouloir
+              poursuivre la guerre, pour la pousser à donner son aval à une
+              suspension des hostilités.
+            </p>
+            <p
+              class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10"
+            >
+              « La balle est dans le camp de la Russie » qui « devra tôt ou tard
+              […] s’engager dans des discussions sérieuses », a lancé le Premier
+              ministre britannique Keir Starmer, selon lequel Vladimir Poutine
+              « est celui qui essaie de retarder » les choses.
+            </p>
+            <p  class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10">
+              Depuis deux semaines, le Premier ministre britannique et le
+              président français Emmanuel Macron cherchent à constituer une
+              « coalition de pays volontaires » qui dépêcheraient des
+              contingents sur le sol ukrainien en cas d’arrêt des combats, afin
+              de dissuader la Russie d’ultérieurement repasser à l’attaque. Un
+              déploiement dont Moscou ne veut pas entendre parler.
+            </p>
+
+            <blockquote class="border-l-4 border-blue-500 pl-4 italic my-4">
+              Citation ou point clé de l'actualité
+            </blockquote>
+          </div>
+
+          <div class="mt-6 flex justify-between items-center border-t pt-4">
+            <span class="text-gray-500">Publié le 17 mars 2025 à 8h02</span>
+            <a
+              href="../index.html"
+              class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+              >Retour aux actualités</a
+            >
+          </div>
+        </div>
+      </article>
+
+      <aside
+        class="w-full md:w-1/4 bg-white rounded-lg shadow-lg mb-6 mt-8 overflow-hidden"
+      >
+        <div class="grid grid-rows-3 h-[70vh]">
+          <div class="row-span-1 relative">
+            <img
+              src="../assets/images/actualite-2.jpeg"
+              alt="Actualité 1"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4"
+            >
+              <span class="text-white text-sm font-semibold">
+                "Une fatigue profonde" : la maire d'Aubervilliers
+              </span>
+            </div>
+          </div>
+
+          <div class="row-span-2 p-4 overflow-y-auto">
+            <h2 class="text-xl font-bold mb-4 border-b pb-2">
+              Dernières actualités
+            </h2>
+            <ul class="space-y-2">
+              <li class="border-b pb-2">
+                <a
+                  href="actualites/actualite-2.html"
+                  class="text-blue-600 hover:underline"
+                >
+                  "Une fatigue profonde" : la maire d'Aubervilliers Karine
+                  Franclet se met en retrait de ses fonctions
+                </a>
+              </li>
+              <li class="border-b pb-2">
+                <a
+                  href="actualites/actualite-3.html"
+                  class="text-blue-600 hover:underline"
+                >
+                  Actualité 3
+                </a>
+              </li>
+              <li class="border-b pb-2">
+                <a
+                  href="actualites/actualite-4.html"
+                  class="text-blue-600 hover:underline"
+                >
+                  Actualité 4
+                </a>
+              </li>
+              <li>
+                <a
+                  href="actualites/actualite-5.html"
+                  class="text-blue-600 hover:underline"
+                >
+                  Actualité 5
+                </a>
+              </li>
+            </ul>
+
+            <h2 class="text-xl font-bold mt-6 mb-4 border-b pb-2">
+              Catégories
+            </h2>
+            <div class="grid grid-cols-2 gap-2">
+              <a
+                href="actualites/politique.html"
+                class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm text-center"
+                >Politique</a
+              >
+              <a
+                href="actualites/societe.html"
+                class="bg-green-50 text-green-600 px-3 py-1 rounded-full text-sm text-center"
+                >Société</a
+              >
+              <a
+                href="actualites/sport.html"
+                class="bg-red-50 text-red-600 px-3 py-1 rounded-full text-sm text-center"
+                >Sport</a
+              >
+              <a
+                href="actualites/culture.html"
+                class="bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm text-center"
+                >Culture</a
+              >
+            </div>
+
+            <h2 class="text-xl font-bold mt-6 mb-4 border-b pb-2">
+              Articles Populaires
+            </h2>
+            <ul class="space-y-2">
+              <li class="border-b pb-2">
+                <a
+                  href="actualites/populaire-1.html"
+                  class="text-blue-600 hover:underline"
+                >
+                  Comment la technologie change notre quotidien
+                </a>
+              </li>
+              <li class="border-b pb-2">
+                <a
+                  href="actualites/populaire-2.html"
+                  class="text-blue-600 hover:underline"
+                >
+                  Les tendances de la mode en 2025
+                </a>
+              </li>
+              <li>
+                <a
+                  href="actualites/populaire-3.html"
+                  class="text-blue-600 hover:underline"
+                >
+                  Les meilleures destinations de voyage pour 2025
+                </a>
+              </li>
+            </ul>
+
+            <a
+              href="actualites.html"
+              class="mt-4 block w-full text-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            >
+              Voir plus
+            </a>
+          </div>
+        </div>
+      </aside>
+    </main>
 
     <!-- Footer -->
- <!-- Footer -->
- <footer class="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-12 pb-3 mt-4">
-    <div class="container mx-auto px-4">
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-12 pb-3 mt-4"
+    >
+      <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-            <!-- Logo et Description -->
-            <div class="col-span-1 md:col-span-2">
-                <div class="flex items-center mb-4">
-                    <img src="../assets/images/perroquet.PNG" alt="Logo" class="w-16 h-16 mr-4 rounded-full">
-                    <h3 class="text-2xl font-bold">Le Perroquet</h3>
-                </div>
-                <p class="text-gray-300 mb-4">Votre source d'information locale et mondiale. Nous nous engageons à fournir des informations précises, objectives et pertinentes.</p>
+          <!-- Logo et Description -->
+          <div class="col-span-1 md:col-span-2">
+            <div class="flex items-center mb-4">
+              <img
+                src="../assets/images/perroquet.PNG"
+                alt="Logo"
+                class="w-16 h-16 mr-4 rounded-full"
+              />
+              <h3 class="text-2xl font-bold">Le Perroquet</h3>
             </div>
+            <p class="text-gray-300 mb-4">
+              Votre source d'information locale et mondiale. Nous nous engageons
+              à fournir des informations précises, objectives et pertinentes.
+            </p>
+          </div>
 
-            <!-- Newsletter -->
-            <div class="col-span-1 md:col-span-2">
-                <h3 class="text-2xl font-bold mb-4">Restez Informé</h3>
-                <p class="mb-4 text-gray-300">Abonnez-vous à notre newsletter pour recevoir les dernières actualités.</p>
-                <form class="flex" id="newsletter-form">
-                    <input 
-                        type="email" 
-                        placeholder="Votre adresse email" 
-                        required
-                        class="w-full px-4 py-2 rounded-l-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                    <button 
-                        type="submit" 
-                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-r-lg transition duration-300 transform hover:scale-105"
-                    >
-                        S'abonner
-                    </button>
-                </form>
-            </div>
+          <!-- Newsletter -->
+          <div class="col-span-1 md:col-span-2">
+            <h3 class="text-2xl font-bold mb-4">Restez Informer</h3>
+            <p class="mb-4 text-gray-300">
+              Abonnez-vous à notre newsletter pour recevoir les dernières
+              actualités.
+            </p>
+            <form class="flex" id="newsletter-form">
+              <input
+                type="email"
+                placeholder="Votre adresse email"
+                required
+                class="w-full px-4 py-2 rounded-l-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <button
+                type="submit"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-r-lg transition duration-300 transform hover:scale-105"
+              >
+                S'abonner
+              </button>
+            </form>
+          </div>
 
-            <!-- Liens Rapides -->
-            <div class="col-span-1">
-                <h4 class="font-bold mb-4 text-xl">Navigation</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Accueil</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Politique</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Sports</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Culture</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">À Propos</a></li>
-                </ul>
-            </div>
+          <!-- Liens Rapides -->
+          <div class="col-span-1">
+            <h4 class="font-bold mb-4 text-xl">Navigation</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition duration-300"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition duration-300"
+                  >Politique</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition duration-300"
+                  >Sports</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition duration-300"
+                  >Culture</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition duration-300"
+                  >À Propos</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- Réseaux Sociaux et Droits -->
-        <div class="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
-            <div class="flex space-x-4 mb-4 md:mb-0">
-                <a href="#" class="text-white hover:text-blue-400 transition transform hover:scale-125">
-                    <i class="fab fa-facebook-f text-2xl"></i>
-                </a>
-                <a href="#" class="text-white hover:text-blue-400 transition transform hover:scale-125">
-                    <i class="fab fa-twitter text-2xl"></i>
-                </a>
-                <a href="#" class="text-white hover:text-blue-400 transition transform hover:scale-125">
-                    <i class="fab fa-instagram text-2xl"></i>
-                </a>
-                <a href="#" class="text-white hover:text-blue-400 transition transform hover:scale-125">
-                    <i class="fab fa-linkedin-in text-2xl"></i>
-                </a>
-            </div>
-            <div class="text-sm text-gray-400 flex items-center">
-                <span class="mr-2">© 2025 Le Perroquet.</span>
-                <a href="#" class="text-gray-300 hover:text-white transition">Mentions légales</a>
-                <span class="mx-2">|</span>
-                <a href="#" class="text-gray-300 hover:text-white transition">Politique de confidentialité</a>
-            </div>
+        <div
+          class="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center"
+        >
+          <div class="flex space-x-4 mb-4 md:mb-0">
+            <a
+              href="#"
+              class="text-white hover:text-blue-400 transition transform hover:scale-125"
+            >
+              <i class="fab fa-facebook-f text-2xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white hover:text-blue-400 transition transform hover:scale-125"
+            >
+              <i class="fab fa-twitter text-2xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white hover:text-blue-400 transition transform hover:scale-125"
+            >
+              <i class="fab fa-instagram text-2xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white hover:text-blue-400 transition transform hover:scale-125"
+            >
+              <i class="fab fa-linkedin-in text-2xl"></i>
+            </a>
+          </div>
+          <div class="text-sm text-gray-400 flex items-center">
+            <span class="mr-2">© 2025 Le Perroquet.</span>
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              >Mentions légales</a
+            >
+            <span class="mx-2">|</span>
+            <a href="#" class="text-gray-300 hover:text-white transition"
+              >Politique de confidentialité</a
+            >
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
     <script src="../js/main.js"></script>
-</body>
+  </body>
 </html>

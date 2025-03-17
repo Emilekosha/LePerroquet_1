@@ -40,12 +40,12 @@ const articles = [
   },
   {
     title:
-      "Métiers de la création et du digital: quelle formation choisir après le bac?",
-    subtitle: "actu<span>artsDesign</span>",
+      "Guerre en Ukraine : Donald Trump affirme qu'il parlera avec Vladimir Poutine ce mardi",
+    subtitle: "actu<span>GuerreUkraine</span>",
     description: "Description courte de l'article 1",
-    image: "assets/images/actualite.webp",
+    image: "assets/images/actualite5.jpg",
     link: "actualites/actualite-5.html",
-    publishTime: "9:30",
+    publishTime: "8:02",
     location: "Paris",
   },
 ];

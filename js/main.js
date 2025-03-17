@@ -65,15 +65,15 @@ function createArticleCards() {
     const articleCard = document.createElement("div");
     articleCard.classList.add(
       "article-card",
-      "bg-white",
-      "rounded-xl",
-      "shadow-lg",
+      // "bg-white",
+      "rounded-lg",
+      // "shadow-lg",
       "overflow-hidden",
-      "transform",
-      "transition-all",
-      "duration-300",
-      "hover:shadow-2xl",
-      "hover:scale-105",
+      // "transform",
+      // "transition-all",
+      // "duration-300",
+      // "hover:shadow-2xl",
+      // "hover:scale-105",
       "cursor-pointer",
       "border",
       "border-gray-100",
@@ -85,11 +85,11 @@ function createArticleCards() {
                 <img 
                     src="${article.image}" 
                     alt="${article.title}" 
-                    class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
+                    class="w-full h-auto object-cover rounded-sm"
                 >
             </div>
-            <div class="p-5">
-                <h4 class="text-sm text-gray-500 mb-2 uppercase tracking-wider">
+            <div class="">
+                <h4 class="text-sm text-gray-500 mb-2 mt-2 uppercase tracking-wider">
                     ${article.subtitle || "Actualité"}
                 </h4>
                 <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
@@ -125,7 +125,7 @@ function createArticleCards() {
     sponsorise: {
       titre: "Sponsorisé par ÉclatPur",
       description:
-        "L'Art de Sublimer la Brillanceet la Pureté de votre Quotidien ! ",
+        "L'Art de sublimer la brillance et la pureté de votre quotidien ! ",
       details: "Merci à nos partenaires",
       image: "assets/images/produit1.jpg",
       elements: ["Entreprise A", "Groupe B", "Fondation C"],
@@ -137,16 +137,15 @@ function createArticleCards() {
   const publiciteCard = document.createElement("div");
   publiciteCard.classList.add(
     "article-card",
-    "bg-white",
+    // "bg-white",
     "rounded-xl",
-    "shadow-lg",
-    "overflow-hidden",
-    "transform",
-    "transition-all",
-    "duration-300",
-    "hover:shadow-2xl",
-    "hover:scale-105"
-    
+    // "shadow-lg",
+    "overflow-hidden"
+    // "transform",
+    // "transition-all",
+    // "duration-300",
+    // "hover:shadow-2xl",
+    // "hover:scale-105"
   );
 
   // Séparation du titre
@@ -162,9 +161,9 @@ function createArticleCards() {
                 class="w-full h-auto object-cover transition-transform duration-300"
             >
         </div>
-        <div class="p-5 cursor-pointer">
+        <div class=" cursor-pointer">
         
-            <h2 class="text-xl mb-2 tracking-wider font-bold hover:text-blue-600 transition-colors duration-300">
+            <h2 class="text-md mb-2 tracking-wider font-bold hover:text-blue-600 transition-colors duration-300">
       <span class="text-gray-400">${partieSponsorise}</span>
       <span class="text-gray-500">${partieTitre}</span>
     </h2>

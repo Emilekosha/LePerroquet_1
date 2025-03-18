@@ -252,3 +252,34 @@ document.addEventListener("DOMContentLoaded", () => {
     emailInput.value = ""; // Réinitialiser le champ
   });
 });
+
+
+// script.js
+
+let slideIndex = 0;
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+
+  // Cache toutes les slides
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+
+  slideIndex++;
+
+  // Si on dépasse le nombre d'images, on recommence à la première
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  // Affiche la slide actuelle
+  slides[slideIndex - 1].style.display = "block";  
+
+  // Change d'image toutes les 3 secondes (3000ms)
+  setTimeout(showSlides, 3000); 
+}
+
+// On lance le diaporama au chargement de la page
+showSlides();
+

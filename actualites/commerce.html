@@ -56,6 +56,34 @@
                   <p class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10">
                     Butch Wilmore et Suni Williams sont coincés à bord de l’ISS depuis juin dernier, à la suite de défaillances du vaisseau Starliner de Boeing qui les avait acheminés. L’appareil, qui effectuait son premier vol habité, avait souffert de problèmes de propulsion et été jugé inapte pour les ramener sur Terre.
                   </p>
+
+                  
+                    <div class="mb-6">
+                      <h2 class="text-2xl font-semibold mb-4">Regardez notre vidéo</h2>
+                      <div class="flex justify-center">
+                        <video 
+                          width="560" 
+                          height="315" 
+                          controls 
+                          autoplay 
+                          muted
+                          class="rounded shadow-lg"
+                        >
+                          <source src="../assets/video/Astronautes bloqués depuis 9 mois dans l'ISS _ la relève est arrivée (1).mp4" type="video/mp4">
+                          Votre navigateur ne supporte pas la vidéo HTML5.
+                        </video>
+                      </div>
+                    </div>
+                    
+                  
+                <h2 class="text-2xl font-bold mb-4 text-gray-600 mt-6">Le record : 437 jours consécutifs</h2>
+                <p class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10">Ce qui devait initialement être un voyage aller-retour de quelques jours s’est prolongé au-delà de neuf mois pour Wilmore et Williams, bien plus longtemps que les rotations classiques d’environ six mois des astronautes à bord de l’ISS. Ils pourraient entreprendre ce retour dès mercredi prochain, soit quelques jours après l’arrivée du nouvel équipage.</p>
+
+                <p class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10">Leur séjour restera plus court que le record spatial américain de 371 jours établi par l’astronaute de la NASA Frank Rubio à bord de l’ISS en 2023, ou le record mondial détenu par le cosmonaute russe Valeri Polyakov, qui a passé 437 jours consécutifs à bord de la station spatiale Mir.</p>
+
+                <p class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10">Le nouvel équipage parti vendredi pour l’ISS est constitué de deux astronautes de la Nasa, Anne McClain et Nichole Ayers, d’un astronaute japonais Takuya Onishi, et d’un cosmonaute russe, Kirill Peskov.</p>
+
+                <p class="text-gray-600 text-xl mb-6 text-left md:text-justify px-10">En dépit de la guerre en Ukraine, les États-Unis et la Russie ont poursuivi ces dernières années leur collaboration dans le domaine spatial, avec l’envoi de cosmonautes russes via SpaceX et d’astronautes américains par les fusées russes Soyouz lors des missions de rotation de l’équipage de l’ISS.</p>
                 </div>
                 
                 <div class="mt-6 flex justify-between items-center border-t pt-4">
@@ -163,139 +191,80 @@
                     </div>
                 </div>
             </aside>
+            
         </main>
     
 
     <!-- Footer -->
-    <footer
-    class="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-12 pb-3 mt-4"
-  >
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-        <!-- Logo et Description -->
-        <div class="col-span-1 md:col-span-2">
-          <div class="flex items-center mb-4">
-            <img
-              src="../assets/images/perroquet.PNG"
-              alt="Logo"
-              class="w-16 h-16 mr-4 rounded-full"
-            />
-            <h3 class="text-2xl font-bold">Le Perroquet</h3>
+    <footer class="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-12 pb-3 mt-4">
+      <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+              <!-- Logo et Description -->
+              <div class="col-span-1 md:col-span-2">
+                  <div class="flex items-center mb-4">
+                      <img src="../assets/images/perroquet.PNG" alt="Logo" class="w-16 h-16 mr-4 rounded-full">
+                      <h3 class="text-2xl font-bold">Le Perroquet</h3>
+                  </div>
+                  <p class="text-gray-300 mb-4">Votre source d'information locale et mondiale. Nous nous engageons à fournir des informations précises, objectives et pertinentes.</p>
+              </div>
+  
+              <!-- Newsletter -->
+              <div class="col-span-1 md:col-span-2">
+                  <h3 class="text-2xl font-bold mb-4">Restez Informer</h3>
+                  <p class="mb-4 text-gray-300">Abonnez-vous à notre newsletter pour recevoir les dernières actualités.</p>
+                  <form class="flex" id="newsletter-form">
+                      <input 
+                          type="email" 
+                          placeholder="Votre adresse email" 
+                          required
+                          class="w-full px-4 py-2 rounded-l-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      >
+                      <button 
+                          type="submit" 
+                          class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-r-lg transition duration-300 transform hover:scale-105"
+                      >
+                          S'abonner
+                      </button>
+                  </form>
+              </div>
+  
+              <!-- Liens Rapides -->
+              <div class="col-span-1">
+                  <h4 class="font-bold mb-4 text-xl">Navigation</h4>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Accueil</a></li>
+                      <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Politique</a></li>
+                      <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Sports</a></li>
+                      <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Culture</a></li>
+                      <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">À Propos</a></li>
+                  </ul>
+              </div>
           </div>
-          <p class="text-gray-300 mb-4">
-            Votre source d'information locale et mondiale. Nous nous engageons
-            à fournir des informations précises, objectives et pertinentes.
-          </p>
-        </div>
-
-        <!-- Newsletter -->
-        <div class="col-span-1 md:col-span-2">
-          <h3 class="text-2xl font-bold mb-4">Restez Informé</h3>
-          <p class="mb-4 text-gray-300">
-            Abonnez-vous à notre newsletter pour recevoir les dernières
-            actualités.
-          </p>
-          <form class="flex" id="newsletter-form">
-            <input
-              type="email"
-              placeholder="Votre adresse email"
-              required
-              class="w-full px-4 py-2 rounded-l-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <button
-              type="submit"
-              class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-r-lg transition duration-300 transform hover:scale-105"
-            >
-              S'abonner
-            </button>
-          </form>
-        </div>
-
-        <!-- Liens Rapides -->
-        <div class="col-span-1">
-          <h4 class="font-bold mb-4 text-xl">Navigation</h4>
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="#"
-                class="text-gray-300 hover:text-white transition duration-300"
-                >Accueil</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-gray-300 hover:text-white transition duration-300"
-                >Politique</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-gray-300 hover:text-white transition duration-300"
-                >Sports</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-gray-300 hover:text-white transition duration-300"
-                >Culture</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-gray-300 hover:text-white transition duration-300"
-                >À Propos</a
-              >
-            </li>
-          </ul>
-        </div>
+  
+          <!-- Réseaux Sociaux et Droits -->
+          <div class="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+              <div class="flex space-x-4 mb-4 md:mb-0">
+                  <a href="#" class="text-white hover:text-blue-400 transition transform hover:scale-125">
+                      <i class="fab fa-facebook-f text-2xl"></i>
+                  </a>
+                  <a href="#" class="text-white hover:text-blue-400 transition transform hover:scale-125">
+                      <i class="fab fa-twitter text-2xl"></i>
+                  </a>
+                  <a href="#" class="text-white hover:text-blue-400 transition transform hover:scale-125">
+                      <i class="fab fa-instagram text-2xl"></i>
+                  </a>
+                  <a href="#" class="text-white hover:text-blue-400 transition transform hover:scale-125">
+                      <i class="fab fa-linkedin-in text-2xl"></i>
+                  </a>
+              </div>
+              <div class="text-sm text-gray-400 flex items-center">
+                  <span class="mr-2">© 2025 Le Perroquet.</span>
+                  <a href="#" class="text-gray-300 hover:text-white transition">Mentions légales</a>
+                  <span class="mx-2">|</span>
+                  <a href="#" class="text-gray-300 hover:text-white transition">Politique de confidentialité</a>
+              </div>
+          </div>
       </div>
-
-      <!-- Réseaux Sociaux et Droits -->
-      <div
-        class="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center"
-      >
-        <div class="flex space-x-4 mb-4 md:mb-0">
-          <a
-            href="#"
-            class="text-white hover:text-blue-400 transition transform hover:scale-125"
-          >
-            <i class="fab fa-facebook-f text-2xl"></i>
-          </a>
-          <a
-            href="#"
-            class="text-white hover:text-blue-400 transition transform hover:scale-125"
-          >
-            <i class="fab fa-twitter text-2xl"></i>
-          </a>
-          <a
-            href="#"
-            class="text-white hover:text-blue-400 transition transform hover:scale-125"
-          >
-            <i class="fab fa-instagram text-2xl"></i>
-          </a>
-          <a
-            href="#"
-            class="text-white hover:text-blue-400 transition transform hover:scale-125"
-          >
-            <i class="fab fa-linkedin-in text-2xl"></i>
-          </a>
-        </div>
-        <div class="text-sm text-gray-400 flex items-center">
-          <span class="mr-2">© 2025 Le Perroquet.</span>
-          <a href="#" class="text-gray-300 hover:text-white transition"
-            >Mentions légales</a
-          >
-          <span class="mx-2">|</span>
-          <a href="#" class="text-gray-300 hover:text-white transition"
-            >Politique de confidentialité</a
-          >
-        </div>
-      </div>
-    </div>
   </footer>
 
     <script src="../js/main.js"></script>

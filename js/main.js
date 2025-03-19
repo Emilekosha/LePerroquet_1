@@ -20,12 +20,12 @@ const articles = [
   },
   {
     title:
-      "Attention, cela peut se reproduire : l'ONU met en garde contre le retour des dictateurs",
-    subtitle: "actu<span>onu</span>",
+      "Face à la flambée des méningites, la vaccination pourrait encore s'élargir en France",
+    subtitle: "actu<span>santé</span>",
     description: "Description courte de l'article 1",
-    image: "assets/images/article-2.jpeg",
+    image: "assets/images/vaccin.webp",
     link: "actualites/actualite-3.html",
-    publishTime: "08:30",
+    publishTime: "19:50",
     location: "France",
   },
   {

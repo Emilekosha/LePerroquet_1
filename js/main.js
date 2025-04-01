@@ -122,13 +122,11 @@ function createArticleCards() {
 
   // Configuration des données publicitaires
   const donneesPublicite = {
-    sponsorise: {
-      titre: "Sponsorisé par ÉclatPur",
+    publicite: {
+      titre: "Votre lessive clean et efficace livrée dans votre boîte aux lettres !",      //Publicité - Spring
       description:
-        "L'Art de sublimer la brillance et la pureté de votre quotidien ! ",
-      details: "Merci à nos partenaires",
-      image: "assets/images/produit1.jpg",
-      elements: ["Entreprise A", "Groupe B", "Fondation C"],
+        "Publicité - Spring",
+      image: "assets/images/pub.jpeg",
       lien: "actualites/sponsors.html",
     },
   };
@@ -149,26 +147,26 @@ function createArticleCards() {
   );
 
   // Séparation du titre
-  const titreParts = donneesPublicite.sponsorise.titre.split(" ");
+  const titreParts = donneesPublicite.publicite.titre.split(" ");
   const partieSponsorise = titreParts.slice(0, 2).join(" "); // "Sponsorisé par"
   const partieTitre = titreParts.slice(2).join(" "); // "ÉclatPur"
 
   publiciteCard.innerHTML = `
         <div class="relative overflow-hidden mb-4 cursor-pointer">
             <img 
-                src="${donneesPublicite.sponsorise.image}" 
-                alt="${donneesPublicite.sponsorise.titre}" 
+                src="${donneesPublicite.publicite.image}" 
+                alt="${donneesPublicite.publicite.titre}" 
                 class="w-full h-auto object-cover transition-transform duration-300"
             >
         </div>
         <div class=" cursor-pointer">
         
-            <h2 class="text-md mb-2 tracking-wider font-bold hover:text-blue-600 transition-colors duration-300">
-      <span class="text-gray-400">${partieSponsorise}</span>
+            <h2 class="text-2xl mb-2 tracking-wider font-bold hover:text-blue-600 transition-colors duration-300">
+      <span class="text-gray-500">${partieSponsorise}</span>
       <span class="text-gray-500">${partieTitre}</span>
     </h2>
-            <h3 class="font-bold text-xl mb-3 text-gray-600  hover:text-gray-800 transition-colors duration-300">
-                  ${donneesPublicite.sponsorise.description}
+            <h3 class="font-bold text-md mb-3 text-gray-600  hover:text-gray-800 transition-colors duration-300">
+                  ${donneesPublicite.publicite.description}
                 </h3>
            
         </div>
@@ -176,7 +174,7 @@ function createArticleCards() {
 
   // Ajoutez un gestionnaire d'événements de clic pour la carte de publicité
   publiciteCard.addEventListener("click", () => {
-    window.location.href = donneesPublicite.sponsorise.lien; // Redirige vers la page de publicité
+    window.location.href = donneesPublicite.publicite.lien; // Redirige vers la page de publicité
   });
 
   // Ajouter la carte de publicité au grid

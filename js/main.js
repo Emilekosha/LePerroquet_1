@@ -123,10 +123,10 @@ function createArticleCards() {
   // Configuration des données publicitaires
   const donneesPublicite = {
     publicite: {
-      titre: "Votre lessive clean et efficace livrée dans votre boîte aux lettres !",      //Publicité - Spring
+      titre:"Publicité - ÉclatPur" ,      //Publicité - Spring
       description:
-        "Publicité - Spring",
-      image: "assets/images/pub.jpeg",
+        "Votre lessive clean et efficace livrée dans votre boîte aux lettres !" ,
+      image: "assets/images/produit1.jpg",
       lien: "actualites/sponsors.html",
     },
   };
@@ -161,11 +161,11 @@ function createArticleCards() {
         </div>
         <div class=" cursor-pointer">
         
-            <h2 class="text-2xl mb-2 tracking-wider font-bold hover:text-blue-600 transition-colors duration-300">
+            <h2 class="text-md mb-2 tracking-wider font-bold hover:text-blue-600 transition-colors duration-300">
       <span class="text-gray-500">${partieSponsorise}</span>
       <span class="text-gray-500">${partieTitre}</span>
     </h2>
-            <h3 class="font-bold text-md mb-3 text-gray-600  hover:text-gray-800 transition-colors duration-300">
+            <h3 class="font-bold text-xl mb-3 text-gray-600  hover:text-gray-800 transition-colors duration-300">
                   ${donneesPublicite.publicite.description}
                 </h3>
            

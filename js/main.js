@@ -125,7 +125,7 @@ function createArticleCards() {
     publicite: {
       titre:"Publicité - ÉclatPur" ,      //Publicité - Spring
       description:
-        "Votre lessive clean et efficace livrée dans votre boîte aux lettres !" ,
+        "L'Art de la Brillance et de la Pureté Quotidienne!" ,
       image: "assets/images/produit1.jpg",
       lien: "actualites/sponsors.html",
     },
